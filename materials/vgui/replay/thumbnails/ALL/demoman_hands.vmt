@@ -1,0 +1,16 @@
+"SDK_VertexLitGeneric"
+{
+"$basetexture" "vgui/replay/thumbnails/ALL/demoman_hands"""
+	"$basemapalphaphongmask" "1"
+
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" ".02"	
+"$lightwarptexture" "vgui/replay/thumbnails/ALL/Lambert_lightwarp"""
+	"$phongfresnelranges"	"[.3 1 8]"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
+}

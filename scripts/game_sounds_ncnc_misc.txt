@@ -1,0 +1,23 @@
+
+"GAME.ALMOST"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+
+	"wave"			"#*music/almost.wav"
+}
+
+"HEAVY.Step"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"85,115"
+	"soundlevel"  	"SNDLVL_96dB"
+	"rndwave"
+	{
+		"wave"		"player\footsteps\heavywalk1.wav"
+		"wave"		"player\footsteps\heavywalk2.wav"
+		"wave"		"player\footsteps\heavywalk3.wav"
+	}
+}

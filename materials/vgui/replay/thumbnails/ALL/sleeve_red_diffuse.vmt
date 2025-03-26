@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+"$basetexture" "vgui/replay/thumbnails/ALL/sleeve_red_diffuse""
+"$bumpmap" "vgui/replay/thumbnails/ALL/sleeve_normal""
+
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" ".3"	
+"$lightwarptexture" "vgui/replay/thumbnails/ALL/Lambert_lightwarp""
+	"$phongfresnelranges"	"[.3 1 8]"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "10"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".1"										// Boost for ambient cube component of rim lighting
+}

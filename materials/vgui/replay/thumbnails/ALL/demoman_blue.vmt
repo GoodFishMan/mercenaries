@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\vgui\replay\thumbnails\ALL\demoman_red.vmt"
+	
+	insert
+	{
+	"$baseTexture" "vgui\replay\thumbnails\ALL\demoman_blue"
+	}
+}

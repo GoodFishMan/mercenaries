@@ -1,0 +1,20 @@
+#base items_game.txt
+#base items_solo_balancing.txt
+#base items_solo_cosmetics.txt
+#base items_solo_taunts.txt
+#base items_solo_weapons.txt
+
+"items_game"
+{
+	"armory_data"
+	{
+		"armory_items"
+		{
+			"action"					""
+			"charity"					""
+			"can_customize_texture"		""
+			"tournamentmedal"			""
+			"duckbadge"					""
+		}
+	}
+}

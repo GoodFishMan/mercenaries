@@ -1,0 +1,33 @@
+"SDK_VertexLitGeneric"
+{
+	"$basetexture"	"models\player\shared/bone_white"
+	"$surfaceprop"	"flesh"
+	"$bumpmap" "models/player/shared/shared_normal"
+
+	"$detail" "models/player/hvyweapon/hvyweapon_gore"	
+	// In order to apply ambient occlusion to the texture without baking it into the actual basetexture, I chose to instead create ambientocclusion overlay sheets that get applied through the $detail syntax to whatever $basetexture is reference by the local VMT in the respective player folder.
+	// This is a rather genius way of making the model compatiable with any custom texture used to replace a class's sheet.
+	
+	"$detailscale" "1"
+	// Detailscale fits the detail texture onto the material the <float> number of times, which in this case is "1". Since I'm using the detail syntax to apply Ambient Occlusion, this should never be anything but "1".
+
+	"$detailblendfactor" "0.85"
+	// Since I'm using the DecalModulate shader, the blend factor needs to be 0.2 higher than 1. DecalModulate by default isn't as opaque as an overlay, so I raised this value to make the Ambient Occlusion darker.
+
+	"$detailblendmode" "0"
+	// When 0 is set as the float value for this syntax it uses DecalModulate as the blendmode, which is the same shader used for bullet hole decals in HL2. This is the only blendmode that supported dark overlays as opposed to bright ones from what I could tell while experimenting.
+	// DecalModulate lightens destination pixels for every source pixel that is over mid-range grey (128) and darkens any destination pixels for every source pixel that is below mid-range grey. In this case the source is the detail texture. 
+	// 128 is referring to RGB. So R would be 128, along with G and B, which together make mid-range grey. So for every number below 128 in RGB the shader darkens the basetexture, and the reverse happens for every number above in RGB. So 255 is the brighest and 0 is the darkest, while 128 is nothing changed at all.
+
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" ".5"	
+	"$lightwarptexture" "models/player/pyro/Lambert_lightwarp"
+	"$phongfresnelranges"	"[1 10 20]"
+	
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
+}

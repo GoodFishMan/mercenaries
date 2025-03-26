@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+"$basetexture" "vgui/replay/thumbnails/ALL/eyeball_invun"
+	"$surfaceprop"	"flesh"
+	"$model"		1
+	"$selfillum" "1"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"spy_invis" //wmodel cloak support
+		{
+		}
+		"invis" //vmodel cloak support
+		{
+		}
+	}
+}

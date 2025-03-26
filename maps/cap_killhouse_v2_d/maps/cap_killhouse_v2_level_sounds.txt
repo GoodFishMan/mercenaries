@@ -1,0 +1,133 @@
+
+"Music.MGS3Alert"
+{
+	"Artist"		"Norihiko Hibino"
+	"Name"			"Battle In The Jungle"
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	
+	"wave"			"#music/mgs3_alert.mp3"
+}
+
+"Music.MGS3Evasion"
+{
+	"Artist"		"Norihiko Hibino"
+	"Name"			"Battle In The Jungle"
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	
+	"wave"			"#music/mgs3_evasion.mp3"
+}
+
+"Music.MGS3Caution"
+{
+	"Artist"		"Norihiko Hibino"
+	"Name"			"Battle In The Jungle"
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	
+	"wave"			"#music/mgs3_caution.mp3"
+}
+
+"Music.MGS3End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	
+	"wave"			"#music/mgs3_end.mp3"
+}
+
+///////////////////////////////////////////////
+"MGS.Frog"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.5"
+	"pitch"			"80,115"
+	"soundlevel"	"SNDLVL_70dB"
+	
+	"wave"			"mgs/mgs_frog.mp3"
+}
+
+///////////////////////////////////////////////
+
+"MGS.VO.capture_start"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,100"
+	"soundlevel"	"SNDLVL_NONE"
+	rndwave
+	{
+	"wave"			"vo/snake/capture_start1.mp3"
+	"wave"			"vo/snake/capture_start2.mp3"
+	"wave"			"vo/snake/capture_start3.mp3"
+	"wave"			"vo/snake/capture_start4.mp3"
+	"wave"			"vo/snake/capture_start5.mp3"
+	"wave"			"vo/snake/capture_start6.mp3"
+	"wave"			"vo/snake/capture_start7.mp3"
+	}
+}
+
+"MGS.VO.capture_drop"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,100"
+	"soundlevel"	"SNDLVL_NONE"
+	rndwave
+	{
+	"wave"			"vo/snake/capture_drop1.mp3"
+	"wave"			"vo/snake/capture_drop2.mp3"
+	"wave"			"vo/snake/capture_drop3.mp3"
+	"wave"			"vo/snake/capture_drop4.mp3"
+	"wave"			"vo/snake/capture_drop5.mp3"
+	"wave"			"vo/snake/capture_drop6.mp3"
+	"wave"			"vo/snake/capture_drop7.mp3"
+	"wave"			"vo/snake/capture_drop8.mp3"
+	}
+}
+
+"MGS.VO.capture_got"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,100"
+	"soundlevel"	"SNDLVL_NONE"
+	rndwave
+	{
+	"wave"			"vo/snake/capture_got1.mp3"
+	"wave"			"vo/snake/capture_got2.mp3"
+	"wave"			"vo/snake/capture_got3.mp3"
+	"wave"			"vo/snake/capture_got4.mp3"
+	"wave"			"vo/snake/capture_got5.mp3"
+	"wave"			"vo/snake/capture_got6.mp3"
+	}
+}
+
+"MGS.VO.10sec"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,100"
+	"soundlevel"	"SNDLVL_NONE"
+	rndwave
+	{
+	"wave"			"vo/snake/10sec1.mp3"
+	"wave"			"vo/snake/10sec1.mp3"
+	"wave"			"vo/snake/10sec2.mp3"
+	"wave"			"vo/snake/10sec2.mp3"
+	"wave"			"vo/snake/10sec3.mp3"
+	"wave"			"vo/snake/10sec3.mp3"
+	"wave"			"vo/snake/10sec4.mp3"
+	"wave"			"vo/snake/10sec4.mp3"
+	"wave"			"vo/snake/10sec5.mp3"
+	}
+}
