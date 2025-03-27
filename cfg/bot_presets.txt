@@ -5,10 +5,10 @@ bot_presets
 		Name "Test Bot S"
 		Class Soldier
 		Scale 1.25
-		Robot 1
+		Robot 0
 		Skill 2
-		Health 2000
-		Team 3
+		Health 200
+		Team 1
 		Conds
 		{
 			30
@@ -18,8 +18,6 @@ bot_presets
 		{
 			"The Black Box"
 			{
-				"fire rate bonus" "0.001"
-				"faster reload rate" "1.6"
 			}
 			"The Concheror"
 			{
@@ -30,7 +28,6 @@ bot_presets
 		}
 		Attributes
 		{
-			"move speed bonus" "1.5"
 			"override footstep sound set" "3"
 		}
 	}

@@ -1,0 +1,1004 @@
+//--------------------------------------------------------------------------------------------------------------
+// Demoman Response Rule File
+//--------------------------------------------------------------------------------------------------------------
+
+Criterion "DemomanIsKillSpeechObject" "DemomanKillSpeechObject" "1" "required" weight 0
+Criterion "DemomanIsNotStillonFire" "DemomanOnFire" "!=1" "required" weight 0
+Criterion "DemomanIsStillonFire" "DemomanOnFire" "1" "required" weight 0
+Criterion "DemomanNotKillSpeech" "DemomanKillSpeech" "!=1" "required" weight 0
+Criterion "DemomanNotKillSpeechMelee" "DemomanKillSpeechMelee" "!=1" "required" weight 0
+Criterion "DemomanNotSaidHealThanks" "DemomanSaidHealThanks" "!=1" "required"
+Criterion "IsHelpCapDemoman" "DemomanHelpCap" "1" "required" weight 0
+// Custom stuff
+Criterion "DemomanNotInvulnerableSpeech" "DemomanInvulnerableSpeech" "!=1" "required" weight 0
+Criterion "DemomanNotAssistSpeech" "DemomanAssistSpeech" "!=1" "required" weight 0
+Criterion "IsDrunk" "NotSober" "1" "required" weight 0
+Criterion "DemomanNotAwardSpeech" "DemomanAwardSpeech" "!=1" "required" weight 0
+
+
+
+//--------------------------------------------------------------------------------------------------------------
+// Auto Speech
+//--------------------------------------------------------------------------------------------------------------
+
+
+Response AwardDemoman
+{
+	speak "Grunt_heavy.Cheers01" predelay "2.5"
+	speak "Grunt_heavy.Cheers02" predelay "2.5"
+	speak "Grunt_heavy.Cheers03" predelay "2.5"
+	speak "Grunt_heavy.Cheers04" predelay "2.5"
+}
+Rule AwardDemoman
+{
+	criteria ConceptAchievementAward IsDemoman DemomanNotAwardSpeech
+	ApplyContext "DemomanAwardSpeech:1:10"
+	ApplyContext "IsDominating:1:10"
+	Response AwardDemoman
+}
+
+Response PlayerRoundStartDemoman
+{
+	speak "Grunt_heavy.BattleCry01" predelay "1.0, 5.0"
+	speak "Grunt_heavy.BattleCry02" predelay "1.0, 5.0"
+}
+Rule PlayerRoundStartDemoman
+{
+	criteria ConceptPlayerRoundStart IsDemoman
+	Response PlayerRoundStartDemoman
+}
+
+Response PlayerCappedIntelligenceDemoman
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+Rule PlayerCappedIntelligenceDemoman
+{
+	criteria ConceptPlayerCapturedIntelligence IsDemoman
+	Response PlayerCappedIntelligenceDemoman
+}
+
+Response PlayerCapturedPointDemoman
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+Rule PlayerCapturedPointDemoman
+{
+	criteria ConceptPlayerCapturedPoint IsDemoman
+	Response PlayerCapturedPointDemoman
+}
+
+Response PlayerSuddenDeathDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule PlayerSuddenDeathDemoman
+{
+	criteria ConceptPlayerSuddenDeathStart IsDemoman
+	Response PlayerSuddenDeathDemoman
+}
+
+Response PlayerStalemateDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule PlayerStalemateDemoman
+{
+	criteria ConceptPlayerStalemate IsDemoman
+	Response PlayerStalemateDemoman
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Auto Speech Combat
+//--------------------------------------------------------------------------------------------------------------
+Response DefendOnThePointDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule DefendOnThePointDemoman
+{
+	criteria ConceptFireWeapon IsDemoman IsOnFriendlyControlPoint NotDefendOnThePointSpeech
+	ApplyContext "DefendOnThePointSpeech:1:30"
+	applycontexttoworld
+	Response DefendOnThePointDemoman
+}
+
+
+// Invuln responses for Grenade Launcher
+Response InvulnerableSpeechDemoman2
+{
+	speak "Grunt_heavy.BattleCry01" predelay "1.0, 5.0"
+	speak "Grunt_heavy.BattleCry02" predelay "1.0, 5.0"
+}
+
+
+Rule InvulnerableSpeechDemoman2
+{
+	criteria ConceptFireWeapon IsDemoman WeaponIsGrenade IsInvulnerable DemomanNotInvulnerableSpeech
+	ApplyContext "DemomanInvulnerableSpeech:1:30"
+	Response InvulnerableSpeechDemoman2
+}
+// End invuln responses for GL
+
+// Invulnerable responses for Sticky launcher
+Response InvulnerableSpeechDemoman
+{
+	speak "Grunt_heavy.BattleCry01" predelay "1.0, 5.0"
+	speak "Grunt_heavy.BattleCry02" predelay "1.0, 5.0"
+}
+
+Rule InvulnerableSpeechDemoman
+{
+	criteria ConceptFireWeapon IsDemoman WeaponIsPipebomb IsInvulnerable DemomanNotInvulnerableSpeech
+	ApplyContext "DemomanInvulnerableSpeech:1:30"
+	Response InvulnerableSpeechDemoman
+}
+// End invuln responses for Sticky
+
+Response KilledPlayerAssistAutoDemoman
+{
+	speak "Grunt_heavy.General01"
+	speak "Grunt_heavy.General02"
+	speak "Grunt_heavy.General03"
+	speak "Grunt_heavy.General04"
+	speak "Grunt_heavy.General05"
+	speak "Grunt_heavy.General06"
+	speak "Grunt_heavy.General07"
+	speak "Grunt_heavy.General08"
+	speak "Grunt_heavy.General09"
+	speak "Grunt_heavy.General10"
+}
+Rule KilledPlayerAssistAutoDemoman
+{
+	criteria ConceptKilledPlayer IsDemoman IsBeingHealed IsManyRecentKills KilledPlayerDelay 20PercentChance DemomanNotAssistSpeech
+	ApplyContext "DemomanAssistSpeech:1:20"
+	Response KilledPlayerAssistAutoDemoman
+}
+
+Response KilledPlayerManyDemoman
+{
+	speak "Grunt_heavy.Domination01" predelay "2.5"
+	speak "Grunt_heavy.Domination02" predelay "2.5"
+	speak "Grunt_heavy.Domination03" predelay "2.5"
+	speak "Grunt_heavy.Domination04" predelay "2.5"
+	speak "Grunt_heavy.Domination05" predelay "2.5"
+	speak "Grunt_heavy.Domination06" predelay "2.5"
+	speak "Grunt_heavy.Domination07" predelay "2.5"
+}
+Rule KilledPlayerManyDemoman
+{
+	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance IsWeaponSecondary KilledPlayerDelay DemomanNotKillSpeech IsDemoman
+	ApplyContext "DemomanKillSpeech:1:10"
+	Response KilledPlayerManyDemoman
+}
+
+// Custom stuff
+// Responses against killing a Soldier
+Response KilledSoldierDemoman
+{
+	speak "Grunt_heavy.Domination01" predelay "2.5"
+	speak "Grunt_heavy.Domination02" predelay "2.5"
+	speak "Grunt_heavy.Domination03" predelay "2.5"
+	speak "Grunt_heavy.Domination04" predelay "2.5"
+	speak "Grunt_heavy.Domination05" predelay "2.5"
+	speak "Grunt_heavy.Domination06" predelay "2.5"
+	speak "Grunt_heavy.Domination07" predelay "2.5"
+}
+Rule KilledSoldierDemoman
+{
+	criterion ConceptKilledPlayer KilledPlayerDelay IsVictimSoldier 10PercentChance DemomanNotKillSpeech IsDemoman WeaponClassIsNotAxe
+	ApplyContext "DemomanKillSpeech:1:60"
+	Response KilledSoldierDemoman
+}
+
+// Frying pan responses
+// These are our base responses for non-sword melee weapons.
+Response KilledPlayerPanDemoman
+{
+	speak "Grunt_heavy.Domination01" predelay "2.5"
+	speak "Grunt_heavy.Domination02" predelay "2.5"
+	speak "Grunt_heavy.Domination03" predelay "2.5"
+	speak "Grunt_heavy.Domination04" predelay "2.5"
+	speak "Grunt_heavy.Domination05" predelay "2.5"
+	speak "Grunt_heavy.Domination06" predelay "2.5"
+	speak "Grunt_heavy.Domination07" predelay "2.5"
+}
+Rule KilledPlayerPanDemoman
+{
+	criteria ConceptKilledPlayer KilledPlayerDelay WeaponIsFryingPan 20PercentChance  DemomanNotKillSpeechMelee IsDemoman
+	ApplyContext "DemomanKillSpeechMelee:1:10"
+	Response KilledPlayerPanDemoman
+}
+
+Rule KilledPlayerSaxxyDemoman
+{
+	criteria ConceptKilledPlayer KilledPlayerDelay WeaponIsSaxxy 20PercentChance  DemomanNotKillSpeechMelee IsDemoman
+	ApplyContext "DemomanKillSpeechMelee:1:10"
+	Response KilledPlayerPanDemoman
+}
+// End Frying Pan responses
+
+// Custom rules for when Demoman drinks from Scrumpy
+// to trigger one of the above drunk lines
+Rule DrunkDemoman
+{
+	criteria ConceptFireWeapon IsDrunk IsDemoman IsWeaponMelee WeaponIsNotFryingPan // Fire if he's holding the Bottle and if the drunk context is set
+	Response KilledPlayerPanDemoman
+}
+// End custom drunk rules
+
+// Modified to play for the Bottle only
+// Modified to include Frying Pan repsonses above, saves having duplicate entries.
+Response KilledPlayerMeleeDemoman
+{
+	scene "scenes/Player/Demoman/low/998.vcd" 
+}
+Rule KilledPlayerMeleeDemoman
+{
+	criteria ConceptKilledPlayer KilledPlayerDelay WeaponIsBottle WeaponIsNotPainTrain WeaponIsNotSaxxy 30PercentChance  DemomanNotKillSpeechMelee IsDemoman
+	ApplyContext "DemomanKillSpeechMelee:1:10"
+	Response KilledPlayerPanDemoman
+	Response KilledPlayerMeleeDemoman
+}
+
+Response KilledPlayerVeryManyDemoman
+{
+	speak "Grunt_heavy.Domination01"
+	speak "Grunt_heavy.Domination02"
+	speak "Grunt_heavy.Domination03"
+	speak "Grunt_heavy.Domination04"
+	speak "Grunt_heavy.Domination05"
+	speak "Grunt_heavy.Domination06"
+	speak "Grunt_heavy.Domination07"
+}
+Rule KilledPlayerVeryManyDemoman
+{
+	criteria ConceptKilledPlayer IsVeryManyRecentKills 50PercentChance IsWeaponSecondary KilledPlayerDelay DemomanNotKillSpeech IsDemoman
+	ApplyContext "DemomanKillSpeech:1:10"
+	Response KilledPlayerVeryManyDemoman
+}
+
+Response PlayerKilledCapperDemoman
+{
+	speak "Grunt_heavy.General01"
+	speak "Grunt_heavy.General02"
+	speak "Grunt_heavy.General03"
+	speak "Grunt_heavy.General04"
+	speak "Grunt_heavy.General05"
+	speak "Grunt_heavy.General06"
+	speak "Grunt_heavy.General07"
+	speak "Grunt_heavy.General08"
+	speak "Grunt_heavy.General09"
+	speak "Grunt_heavy.General10"
+}
+Rule PlayerKilledCapperDemoman
+{
+	criteria ConceptCapBlocked IsDemoman
+	ApplyContext "DemomanKillSpeech:1:10"
+	Response PlayerKilledCapperDemoman
+}
+
+Response PlayerKilledDominatingDemoman
+{
+	speak "Grunt_heavy.Domination01" predelay "2.5"
+	speak "Grunt_heavy.Domination02" predelay "2.5"
+	speak "Grunt_heavy.Domination03" predelay "2.5"
+	speak "Grunt_heavy.Domination04" predelay "2.5"
+	speak "Grunt_heavy.Domination05" predelay "2.5"
+	speak "Grunt_heavy.Domination06" predelay "2.5"
+	speak "Grunt_heavy.Domination07" predelay "2.5"
+}
+Rule PlayerKilledDominatingDemoman
+{
+	criteria ConceptKilledPlayer IsDemoman IsDominated
+	ApplyContext "DemomanKillSpeech:1:10"
+	ApplyContext "IsDominating:1:10"
+	Response PlayerKilledDominatingDemoman
+}
+
+Response PlayerKilledDominatingDemomanDemoman
+{
+	speak "Grunt_heavy.Domination01" predelay "2.5"
+	speak "Grunt_heavy.Domination02" predelay "2.5"
+	speak "Grunt_heavy.Domination03" predelay "2.5"
+	speak "Grunt_heavy.Domination04" predelay "2.5"
+	speak "Grunt_heavy.Domination05" predelay "2.5"
+	speak "Grunt_heavy.Domination06" predelay "2.5"
+	speak "Grunt_heavy.Domination07" predelay "2.5"
+}
+Rule PlayerKilledDominatingDemomanDemoman
+{
+	criteria ConceptKilledPlayer IsDemoman IsDominated  IsVictimDemoman
+	ApplyContext "DemomanKillSpeech:1:10"
+	ApplyContext "IsDominating:1:10"
+	Response PlayerKilledDominatingDemomanDemoman
+}
+
+Response PlayerKilledDominatingScoutDemoman
+{
+	speak "Grunt_heavy.Domination01" predelay "2.5"
+	speak "Grunt_heavy.Domination02" predelay "2.5"
+	speak "Grunt_heavy.Domination03" predelay "2.5"
+	speak "Grunt_heavy.Domination04" predelay "2.5"
+	speak "Grunt_heavy.Domination05" predelay "2.5"
+	speak "Grunt_heavy.Domination06" predelay "2.5"
+	speak "Grunt_heavy.Domination07" predelay "2.5"
+}
+Rule PlayerKilledDominatingScoutDemoman
+{
+	criteria ConceptKilledPlayer IsDemoman IsDominated  IsVictimScout
+	ApplyContext "DemomanKillSpeech:1:10"
+	ApplyContext "IsDominating:1:10"
+	Response PlayerKilledDominatingScoutDemoman
+}
+
+
+Response PlayerKilledDominatingSoldierDemoman
+{
+	speak "Grunt_heavy.Domination01" predelay "2.5"
+	speak "Grunt_heavy.Domination02" predelay "2.5"
+	speak "Grunt_heavy.Domination03" predelay "2.5"
+	speak "Grunt_heavy.Domination04" predelay "2.5"
+	speak "Grunt_heavy.Domination05" predelay "2.5"
+	speak "Grunt_heavy.Domination06" predelay "2.5"
+	speak "Grunt_heavy.Domination07" predelay "2.5"
+}
+Rule PlayerKilledDominatingSoldierDemoman
+{
+	criteria ConceptKilledPlayer IsDemoman IsDominated  IsVictimSoldier
+	ApplyContext "DemomanKillSpeech:1:10"
+	ApplyContext "IsDominating:1:10"
+	Response PlayerKilledDominatingSoldierDemoman
+}
+
+Response PlayerKilledForRevengeDemoman
+{
+	speak "Grunt_heavy.General01"
+	speak "Grunt_heavy.General02"
+	speak "Grunt_heavy.General03"
+	speak "Grunt_heavy.General04"
+	speak "Grunt_heavy.General05"
+	speak "Grunt_heavy.General06"
+	speak "Grunt_heavy.General07"
+	speak "Grunt_heavy.General08"
+	speak "Grunt_heavy.General09"
+	speak "Grunt_heavy.General10"
+}
+Rule PlayerKilledForRevengeDemoman
+{
+	criteria ConceptKilledPlayer IsDemoman IsRevenge
+	ApplyContext "DemomanKillSpeech:1:10"
+	ApplyContext "IsDominating:1:10"
+	Response PlayerKilledForRevengeDemoman
+}
+
+Response PlayerKilledObjectDemoman
+{
+	speak "Grunt_heavy.General01"
+	speak "Grunt_heavy.General02"
+	speak "Grunt_heavy.General03"
+	speak "Grunt_heavy.General04"
+	speak "Grunt_heavy.General05"
+	speak "Grunt_heavy.General06"
+	speak "Grunt_heavy.General07"
+	speak "Grunt_heavy.General08"
+	speak "Grunt_heavy.General09"
+	speak "Grunt_heavy.General10"
+}
+Rule PlayerKilledObjectDemoman
+{
+	criteria ConceptKilledObject IsDemoman 30PercentChance IsARecentKill
+	ApplyContext "DemomanKillSpeechObject:1:30"
+	Response PlayerKilledObjectDemoman
+}
+
+
+//--------------------------------------------------------------------------------------------------------------
+// Auto Speech Pain
+//--------------------------------------------------------------------------------------------------------------
+Response PlayerAttackerPainDemoman
+{
+	scene "scenes/Player/Demoman/low/983.vcd" 
+	scene "scenes/Player/Demoman/low/984.vcd" 
+	scene "scenes/Player/Demoman/low/985.vcd" 
+	scene "scenes/Player/Demoman/low/1396.vcd" 
+}
+Rule PlayerAttackerPainDemoman
+{
+	criteria ConceptAttackerPain IsDemoman IsNotDominating
+	Response PlayerAttackerPainDemoman
+}
+
+Response PlayerOnFireDemoman
+{
+	scene "scenes/Player/Demoman/low/872.vcd" 
+	scene "scenes/Player/Demoman/low/874.vcd" 
+}
+Rule PlayerOnFireDemoman
+{
+	criteria ConceptFire IsDemoman DemomanIsNotStillonFire IsNotDominating
+	ApplyContext "DemomanOnFire:1:7"
+	Response PlayerOnFireDemoman
+}
+
+Response PlayerOnFireRareDemoman
+{
+	scene "scenes/Player/Demoman/low/873.vcd" 
+}
+Rule PlayerOnFireRareDemoman
+{
+	criteria ConceptFire IsDemoman 10PercentChance DemomanIsNotStillonFire IsNotDominating
+	ApplyContext "DemomanOnFire:1:7"
+	Response PlayerOnFireRareDemoman
+}
+
+Response PlayerPainDemoman
+{
+	scene "scenes/Player/Demoman/low/986.vcd" 
+	scene "scenes/Player/Demoman/low/987.vcd" 
+	scene "scenes/Player/Demoman/low/988.vcd" 
+	scene "scenes/Player/Demoman/low/1392.vcd" 
+	scene "scenes/Player/Demoman/low/1393.vcd" 
+	scene "scenes/Player/Demoman/low/1394.vcd" 
+	scene "scenes/Player/Demoman/low/1395.vcd" 
+}
+Rule PlayerPainDemoman
+{
+	criteria ConceptPain IsDemoman IsNotDominating
+	Response PlayerPainDemoman
+}
+
+Response PlayerStillOnFireDemoman
+{
+	scene "scenes/Player/Demoman/low/1927.vcd" 
+}
+Rule PlayerStillOnFireDemoman
+{
+	criteria ConceptFire IsDemoman  DemomanIsStillonFire IsNotDominating
+	ApplyContext "DemomanOnFire:1:7"
+	Response PlayerStillOnFireDemoman
+}
+
+
+//--------------------------------------------------------------------------------------------------------------
+// Duel Speech
+//--------------------------------------------------------------------------------------------------------------
+Response AcceptedDuelDemoman
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+Rule AcceptedDuelDemoman
+{
+	criteria ConceptIAcceptDuel IsDemoman
+	Response AcceptedDuelDemoman
+}
+
+
+Response RejectedDuelDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule RejectedDuelDemoman
+{
+	criteria ConceptDuelRejected IsDemoman
+	Response RejectedDuelDemoman
+}
+
+
+//--------------------------------------------------------------------------------------------------------------
+// Speech Menu 1
+//--------------------------------------------------------------------------------------------------------------
+Response PlayerGoDemoman
+{
+	speak "Grunt_heavy.Go01"
+}
+Rule PlayerGoDemoman
+{
+	criteria ConceptPlayerGo IsDemoman
+	Response PlayerGoDemoman
+}
+
+Response PlayerHeadLeftDemoman
+{
+	speak "Grunt_heavy.Left01"
+}
+Rule PlayerHeadLeftDemoman
+{
+	criteria ConceptPlayerLeft  IsDemoman
+	Response PlayerHeadLeftDemoman
+}
+
+Response PlayerHeadRightDemoman
+{
+	speak "Grunt_heavy.Right01"
+}
+Rule PlayerHeadRightDemoman
+{
+	criteria ConceptPlayerRight  IsDemoman
+	Response PlayerHeadRightDemoman
+}
+
+Response PlayerHelpDemoman
+{
+	speak "Grunt_heavy.Help01"
+}
+Rule PlayerHelpDemoman
+{
+	criteria ConceptPlayerHelp IsDemoman
+	Response PlayerHelpDemoman
+}
+
+Response PlayerHelpCaptureDemoman
+{
+	speak "Grunt_heavy.Help01"
+}
+Rule PlayerHelpCaptureDemoman
+{
+	criteria ConceptPlayerHelp IsDemoman IsOnCappableControlPoint
+	ApplyContext "DemomanHelpCap:1:10"
+	Response PlayerHelpCaptureDemoman
+}
+
+Response PlayerHelpCapture2Demoman
+{
+	speak "Grunt_heavy.Help01"
+}
+Rule PlayerHelpCapture2Demoman
+{
+	criteria ConceptPlayerHelp IsDemoman IsOnCappableControlPoint IsHelpCapDemoman
+	Response PlayerHelpCapture2Demoman
+}
+
+Response PlayerHelpDefendDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule PlayerHelpDefendDemoman
+{
+	criteria ConceptPlayerHelp IsDemoman IsOnFriendlyControlPoint
+	Response PlayerHelpDefendDemoman
+}
+
+Response PlayerMedicDemoman
+{
+	speak "Grunt_heavy.Medic01"
+	speak "Grunt_heavy.Medic02"
+}
+Rule PlayerMedicDemoman
+{
+	criteria ConceptPlayerMedic IsDemoman
+	Response PlayerMedicDemoman
+}
+
+
+Response PlayerMoveUpDemoman
+{
+	speak "Grunt_heavy.MoveUp01"
+}
+Rule PlayerMoveUpDemoman
+{
+	criteria ConceptPlayerMoveUp  IsDemoman
+	Response PlayerMoveUpDemoman
+}
+
+Response PlayerNoDemoman
+{
+	speak "Grunt_heavy.No01"
+	speak "Grunt_heavy.No02"
+}
+Rule PlayerNoDemoman
+{
+	criteria ConceptPlayerNo  IsDemoman
+	Response PlayerNoDemoman
+}
+
+Response PlayerThanksDemoman
+{
+//	scene "scenes/Player/Demoman/low/1030.vcd" 
+//	scene "scenes/Player/Demoman/low/1031.vcd" 
+}
+Rule PlayerThanksDemoman
+{
+	criteria ConceptPlayerThanks IsDemoman
+	Response PlayerThanksDemoman
+}
+
+// Custom Assist kill response
+// As there is no actual concept for assist kills, this is the second best method.
+// Say thanks after you kill more than one person.
+
+Response KilledPlayerAssistDemoman
+{
+	speak "Grunt_heavy.General01"
+	speak "Grunt_heavy.General02"
+	speak "Grunt_heavy.General03"
+	speak "Grunt_heavy.General04"
+	speak "Grunt_heavy.General05"
+	speak "Grunt_heavy.General06"
+	speak "Grunt_heavy.General07"
+	speak "Grunt_heavy.General08"
+	speak "Grunt_heavy.General09"
+	speak "Grunt_heavy.General10"
+}
+Rule KilledPlayerAssistDemoman
+{
+	criteria ConceptPlayerThanks IsDemoman IsARecentKill KilledPlayerDelay DemomanNotAssistSpeech
+	ApplyContext "DemomanAssistSpeech:1:20"
+	Response KilledPlayerAssistDemoman
+}
+
+Response KilledPlayerAssistDemoman2
+{
+	speak "Grunt_heavy.General01"
+	speak "Grunt_heavy.General02"
+	speak "Grunt_heavy.General03"
+	speak "Grunt_heavy.General04"
+	speak "Grunt_heavy.General05"
+	speak "Grunt_heavy.General06"
+	speak "Grunt_heavy.General07"
+	speak "Grunt_heavy.General08"
+	speak "Grunt_heavy.General09"
+	speak "Grunt_heavy.General10"
+}
+Rule KilledPlayerAssistDemoman2
+{
+	criteria ConceptPlayerThanks IsDemoman IsNotBeingHealed IsARecentKill KilledPlayerDelay DemomanNotAssistSpeech
+	ApplyContext "DemomanAssistSpeech:1:20"
+	Response KilledPlayerAssistDemoman
+	Response KilledPlayerAssistDemoman2
+}
+
+// End custom
+
+Response PlayerYesDemoman
+{
+	speak "Grunt_heavy.Yes01"
+	speak "Grunt_heavy.Yes02"
+}
+Rule PlayerYesDemoman
+{
+	criteria ConceptPlayerYes  IsDemoman
+	Response PlayerYesDemoman
+}
+
+
+//--------------------------------------------------------------------------------------------------------------
+// Speech Menu 2
+//--------------------------------------------------------------------------------------------------------------
+Response PlayerActivateChargeDemoman
+{
+
+}
+Rule PlayerActivateChargeDemoman
+{
+	criteria ConceptPlayerActivateCharge IsDemoman
+	Response PlayerActivateChargeDemoman
+}
+
+Response PlayerCloakedSpyDemoman
+{
+
+}
+Rule PlayerCloakedSpyDemoman
+{
+	criteria ConceptPlayerCloakedSpy IsDemoman
+	Response PlayerCloakedSpyDemoman
+}
+
+Response PlayerDispenserHereDemoman
+{
+
+}
+Rule PlayerDispenserHereDemoman
+{
+	criteria ConceptPlayerDispenserHere IsDemoman
+	Response PlayerDispenserHereDemoman
+}
+
+Response PlayerIncomingDemoman
+{
+	speak "Grunt_heavy.Incoming01"
+}
+Rule PlayerIncomingDemoman
+{
+	criteria ConceptPlayerIncoming IsDemoman
+	Response PlayerIncomingDemoman
+}
+
+Response PlayerSentryAheadDemoman
+{
+
+}
+Rule PlayerSentryAheadDemoman
+{
+	criteria ConceptPlayerSentryAhead IsDemoman
+	Response PlayerSentryAheadDemoman
+}
+
+Response PlayerSentryHereDemoman
+{
+
+}
+Rule PlayerSentryHereDemoman
+{
+	criteria ConceptPlayerSentryHere IsDemoman
+	Response PlayerSentryHereDemoman
+}
+
+Response PlayerTeleporterHereDemoman
+{
+
+}
+Rule PlayerTeleporterHereDemoman
+{
+	criteria ConceptPlayerTeleporterHere IsDemoman
+	Response PlayerTeleporterHereDemoman
+}
+
+
+//--------------------------------------------------------------------------------------------------------------
+// Speech Menu 3
+//--------------------------------------------------------------------------------------------------------------
+Response PlayerBattleCryDemoman
+{
+	speak "Grunt_heavy.BattleCry01"
+	speak "Grunt_heavy.BattleCry02"
+}
+Rule PlayerBattleCryDemoman
+{
+	criteria ConceptPlayerBattleCry IsDemoman
+	Response PlayerBattleCryDemoman
+}
+
+// Custom stuff - melee dare
+// Look at enemy, then do battle cry voice command while holding a melee weapon.
+Response MeleeDareCombatDemoman
+{
+
+}
+Rule MeleeDareCombatDemoman
+{
+	criteria ConceptPlayerBattleCry IsWeaponMelee IsDemoman IsCrosshairEnemy
+	Response MeleeDareCombatDemoman
+}
+//End custom
+
+
+Response PlayerCheersDemoman
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+Rule PlayerCheersDemoman
+{
+	criteria ConceptPlayerCheers IsDemoman
+	Response PlayerCheersDemoman
+}
+
+Response PlayerGoodJobDemoman
+{
+	scene "scenes/Player/Demoman/low/914.vcd" 
+	scene "scenes/Player/Demoman/low/915.vcd" 
+}
+Rule PlayerGoodJobDemoman
+{
+	criteria ConceptPlayerGoodJob IsDemoman
+	Response PlayerGoodJobDemoman
+}
+
+Response PlayerJeersDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule PlayerJeersDemoman
+{
+	criteria ConceptPlayerJeers IsDemoman
+	Response PlayerJeersDemoman
+}
+
+Response PlayerLostPointDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule PlayerLostPointDemoman
+{
+	criteria ConceptPlayerLostPoint IsDemoman
+	Response PlayerLostPointDemoman
+}
+
+Response PlayerNegativeDemoman
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule PlayerNegativeDemoman
+{
+	criteria ConceptPlayerNegative IsDemoman
+	Response PlayerNegativeDemoman
+}
+
+Response PlayerNiceShotDemoman
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+Rule PlayerNiceShotDemoman
+{
+	criteria ConceptPlayerNiceShot IsDemoman
+	Response PlayerNiceShotDemoman
+}
+
+Response PlayerPositiveDemoman
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+
+Response PlayerTauntsDemoman
+{
+
+}
+Rule PlayerPositiveDemoman
+{
+	criteria ConceptPlayerPositive IsDemoman
+	Response PlayerPositiveDemoman
+	Response PlayerTauntsDemoman
+}
+
+//--------------------------------------------------------------------------------------------------------------
+// Auto Speech Cart
+//--------------------------------------------------------------------------------------------------------------
+Criterion "DemomanNotSaidCartMovingBackwardD" "SaidCartMovingBackwardD" "!=1" "required" weight 0
+Criterion "DemomanNotSaidCartMovingBackwardO" "SaidCartMovingBackwardO" "!=1" "required" weight 0
+Criterion "DemomanNotSaidCartMovingForwardD" "SaidCartMovingForwardD" "!=1" "required" weight 0
+Criterion "DemomanNotSaidCartMovingForwardO" "SaidCartMovingForwardO" "!=1" "required" weight 0
+Criterion "DemomanNotSaidCartMovingStoppedD" "SaidCartMovingStoppedD" "!=1" "required" weight 0
+Criterion "DemomanNotSaidCartMovingStoppedO" "SaidCartMovingStoppedO" "!=1" "required" weight 0
+Response CartMovingBackwardsDefenseDemoman                                                     
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+Rule CartMovingBackwardsDefenseDemoman                                                     
+{
+	criteria ConceptCartMovingBackward IsOnDefense IsDemoman DemomanNotSaidCartMovingBackwardD IsNotDisguised 75PercentChance                                                                                                                                                          
+	ApplyContext "SaidCartMovingBackwardD:1:20"
+	Response CartMovingBackwardsDefenseDemoman                                                     
+}
+Response CartMovingBackwardsOffenseDemoman                                                     
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule CartMovingBackwardsOffenseDemoman                                                     
+{
+	criteria ConceptCartMovingBackward IsOnOffense IsDemoman DemomanNotSaidCartMovingBackwardO IsNotDisguised 75PercentChance                                                                                                                                                          
+	ApplyContext "SaidCartMovingBackwardO:1:20"
+	Response CartMovingBackwardsOffenseDemoman                                                     
+}
+Response CartMovingForwardDefenseDemoman                                                       
+{
+	speak "Grunt_heavy.Jeers01"
+	speak "Grunt_heavy.Jeers02"
+	speak "Grunt_heavy.Jeers03"
+	speak "Grunt_heavy.Jeers04"
+	speak "Grunt_heavy.Jeers05"
+	speak "Grunt_heavy.Jeers06"
+	speak "Grunt_heavy.Jeers07"
+}
+Rule CartMovingForwardDefenseDemoman                                                       
+{
+	criteria ConceptCartMovingForward IsOnDefense IsDemoman DemomanNotSaidCartMovingForwardD IsNotDisguised 75PercentChance                                                                                                                                                            
+	ApplyContext "SaidCartMovingForwardD:1:20"
+	Response CartMovingForwardDefenseDemoman                                                       
+}
+Response CartMovingForwardOffenseDemoman                                                       
+{
+	speak "Grunt_heavy.Cheers01"
+	speak "Grunt_heavy.Cheers02"
+	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
+}
+Rule CartMovingForwardOffenseDemoman                                                       
+{
+	criteria ConceptCartMovingForward IsOnOffense IsDemoman DemomanNotSaidCartMovingForwardO IsNotDisguised 75PercentChance                                                                                                                                                            
+	ApplyContext "SaidCartMovingForwardO:1:20"
+	Response CartMovingForwardOffenseDemoman                                                       
+}
+Response CartMovingStoppedDefenseDemoman                                                       
+{
+}
+Rule CartMovingStoppedDefenseDemoman                                                       
+{
+	criteria ConceptCartMovingStopped IsOnDefense IsDemoman DemomanNotSaidCartMovingStoppedD IsNotDisguised 75PercentChance                                                                                                                                                            
+	ApplyContext "SaidCartMovingStoppedD:1:20"
+	Response CartMovingStoppedDefenseDemoman                                                       
+}
+Response CartMovingStoppedOffenseDemoman                                                       
+{
+	speak "Grunt_heavy.General01"
+	speak "Grunt_heavy.General02"
+	speak "Grunt_heavy.General03"
+	speak "Grunt_heavy.General04"
+	speak "Grunt_heavy.General05"
+	speak "Grunt_heavy.General06"
+	speak "Grunt_heavy.General07"
+	speak "Grunt_heavy.General08"
+	speak "Grunt_heavy.General09"
+	speak "Grunt_heavy.General10"
+}
+Rule CartMovingStoppedOffenseDemoman                                                       
+{
+	criteria ConceptCartMovingStopped IsOnOffense IsDemoman DemomanNotSaidCartMovingStoppedO IsNotDisguised 75PercentChance                                                                                                                                                            
+	ApplyContext "SaidCartMovingStoppedO:1:20"
+	Response CartMovingStoppedOffenseDemoman                                                       
+}
