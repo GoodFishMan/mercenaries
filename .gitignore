@@ -16,3 +16,5 @@ stats.txt
 *.log
 *.log
 tf2_playerstats.dmx
+/screenshots
+*.cache
