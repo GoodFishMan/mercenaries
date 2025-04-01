@@ -2,19 +2,612 @@
 #base items_solo_balancing.txt
 #base items_solo_cosmetics.txt
 #base items_solo_taunts.txt
-#base items_solo_weapons.txt
 
 "items_game"
 {
-	"armory_data"
+	"prefabs"
 	{
-		"armory_items"
+		"weapon_ncnc_base"
 		{
-			"action"					""
-			"charity"					""
-			"can_customize_texture"		""
-			"tournamentmedal"			""
-			"duckbadge"					""
+			"item_name"	"Carp Weapon"
+			"item_logname"	"carpweapon"
+			"item_iconname"	"carpweapon"
+			"item_type_name"	"Test Weapon"
+			"attach_to_hands"	"0"
+			"item_quality"	"unique"
+			"item_slot"	"secondary"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"pyro" "1"
+			}
+			"static_attrs"
+			{
+				"mult_spread_scales_consecutive"	"1.0"
+				"max spread number"		"0.5"
+				"weapon spread scale"	"2.0"
+				"mod_recoil_angle"		"1.0"
+				
+				"damage bonus"		"1.5"
+				"fire rate bonus"	"0.75"
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_MP_STAND_SECONDARY"	"ACT_HL2MP_IDLE_SMG1"
+					"ACT_MP_CROUCH_SECONDARY"	"ACT_HL2MP_IDLE_CROUCH_SMG1"
+					"ACT_MP_RUN_SECONDARY"	"ACT_HL2MP_RUN_SMG1"
+					"ACT_MP_AIRWALK_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
+					"ACT_MP_CROUCHWALK_SECONDARY"	"ACT_HL2MP_WALK_CROUCH_SMG1"
+					"ACT_MP_JUMP_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
+					"ACT_MP_JUMP_START_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
+					"ACT_MP_JUMP_FLOAT_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
+					"ACT_MP_AIRWALK_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
+					"ACT_MP_SWIM_SECONDARY"	"ACT_HL2MP_SWIM_SMG1"
+				}
+			}
+		}
+		"weapon_shockingtruth"
+		{
+			"item_class"	"saxxy"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"item_logname"	"shockingtruth"
+			"item_iconname"	"shockingtruth"
+			"show_in_armory"	"1"
+			"item_type_name"	"Defibrillator"
+			"item_name"	"Shocking Truth"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/weapons/c_models/c_bat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/player/items/medic/tauntdoctors_defibrillators/tauntdoctors_defibrillators.mdl"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "40"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"anim_slot" "MELEE_ALLCLASS"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"pyro" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -7"
+				"self dmg push force increased" "2.0"
+				"damage force increase" "4.0"
+				"damage blast push" "4.0"
+				"move speed bonus" "1.05"
+				"hit self on miss" "1"
+				"single wep deploy time increased" "1.5"
+			}
+			"attributes"
+			{
+				"always tradable"
+				{
+					"attribute_class"	"always_tradable"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_hit"		"Weapon_BatSaber.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BatSaber.HitWorld"
+				"sound_melee_miss"	"Weapon_BatSaber.Swing"
+				"sound_burst"		"Weapon_BatSaber.SwingCrit"
+				"sound_deploy"		"Weapon_BatSaber.Draw"
+			}
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
+		}
+		"weapon_test3"
+		{
+			"item_name"	"SMG22"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"pyro" "1"
+			}
+			"static_attrs"
+			{
+				"mult_spread_scales_consecutive"				"1.0"
+				"mod_recoil_angle"	"0.6"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_MP5Navy.Single"
+			}
+			
+
+		}
+		"weapon_m4a1"
+		{
+			"item_name"	"M4A1"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"pyro" "1"
+			}
+			"static_attrs"
+			{
+				"mult_spread_scales_consecutive"	"1.0"
+				"max spread number"		"1.5"
+				"mod_recoil_angle"	"0.3"
+			}
+
+		}
+		"weapon_test1"
+		{
+			"item_name"	"Degreaser Two"
+			"static_attrs"
+			{
+				"weapon burn dmg reduced"				"0.30"
+			}
+		}
+	}
+	"items"
+	{
+		"34444"
+		{
+			"name"	"Degreaser Two"
+			"prefab" "weapon_test1 weapon_degreaser paintkit_base"
+			"particle_suffix"	"degreaser"
+			"baseitem" "0"
+			"soloitem" "1"
+		}
+		"34445"
+		{
+			"name" "Shocking Truth"
+			"prefab" "weapon_melee_allclass weapon_shockingtruth"
+		}
+		"34446"
+		{
+			"name"	"SMG2"
+			"prefab"	"weapon_test3 weapon_smg"
+			"baseitem" "0"
+			"soloitem" "1"
+			"attributes"
+			{
+				"hidden secondary max ammo penalty"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"3.0"
+				}
+			}
+		}
+		"34447"
+		{
+			"name"	"Carp Weapon"
+			"prefab"	"weapon_ncnc_base weapon_smg"
+			"baseitem" "0"
+			"soloitem" "1"
+			"attributes"
+			{
+				"hidden secondary max ammo penalty"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"3.0"
+				}
+			}
+		}
+		"34448"
+		{
+			"name"	"Noise Maker - Bonesaw"
+			"loadondemand"	"1"
+			"item_class"	"tf_wearable"
+			"soloitem" "1"
+			"tool"
+			{
+				"type"	"noise_maker"
+			}
+			"capabilities"
+			{
+				"usable"		"1"
+				"usable_gc"		"1"
+			}
+			"show_in_armory"	"1"
+			"armory_desc"		"BONESAW IS READY!"
+			"item_type_name"	"#TF_Party_Favor"
+			"item_name"			"Noise Maker - Bonesaw"
+			"item_slot"	"action"
+			"image_inventory"	"backpack/crafting/noisemaker_gong"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"		"1"
+				"heavy"		"1"
+				"spy" 		"1"
+				"engineer" 	"1"
+				"pyro" 		"1"
+			}
+			"attributes"
+			{
+				"noise maker"
+				{
+					"attribute_class"	"enable_misc2_noisemaker"
+					"value"			"1"
+				}
+				"unlimited quantity"
+				{
+					"attribute_class"	"unlimited_quantity"
+					"value" "1"
+				}
+			}
+			"visuals"
+			{
+				"custom_sound0"	"Jingle.Bownsaw"
+			}
+			"mouse_pressed_sound" 	"Jingle.Bownsaw"
+			"drop_sound"		"ui/item_metal_scrap_drop.wav"
+		}
+		"34449"
+		{
+			"name"	"Assault Weapon"
+			"prefab"	"weapon_m4a1 weapon_rifle"
+			"baseitem" "0"
+			"soloitem" "1"
+			"attributes"
+			{
+				"hidden secondary max ammo penalty"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"4.0"
+				}
+			}
+		}
+		"34450"
+		{
+			"name"		"Crow Mask"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"CROWBAR MASK"
+			"item_description"		"#TF_hwn2016_mad_mask_Desc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"1"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34451"
+		{
+			"name"		"Animal Skull"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Animal Skull"
+			"item_description"		"Oh you're a fuzzy?"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"2"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34452"
+		{
+			"name"		"Dave Tep"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Tep Mask"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"3"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34453"
+		{
+			"name"		"Bite Mask"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Bite Mask"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"4"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34454"
+		{
+			"name"		"Fire Blue"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Fire Blue"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"5"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34455"
+		{
+			"name"		"Green"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Green Mask"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"6"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34456"
+		{
+			"name"		"Skull Mask 1"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Skull Mask 1"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"7"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34457"
+		{
+			"name"		"Skull Mask 2"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Skull Mask 2"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"8"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34458"
+		{
+			"name"		"Skull Mask 3"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Skull Mask 3"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"9"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
 	}
 }
