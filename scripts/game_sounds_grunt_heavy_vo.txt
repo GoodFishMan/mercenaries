@@ -192,6 +192,36 @@
 
 	"wave"			"vo/grunt_heavy/gruntheavy_battlecry02.wav"
 }
+"Grunt_heavy.BattleCry03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b9.wav"
+}
+"Grunt_heavy.BattleCry04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b2.wav"
+}
+"Grunt_heavy.BattleCry05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b3.wav"
+}
 "Grunt_heavy.Cheers01"
 {
 	"channel"		"CHAN_VOICE"
@@ -302,6 +332,47 @@
 
 	"wave"			"vo/grunt_heavy/gruntheavy_jeers07.wav"
 }
+"Grunt_heavy.Jeers08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b5.wav"
+}
+"Grunt_heavy.Jeers09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b4.wav"
+}
+"Grunt_heavy.Jeers10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b1.wav"
+}
+"Grunt_heavy.Jeers11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b8.wav"
+}
+
 //-----------------------------------------------------------------------------
 // General Speech - Used non specifically for various actions
 //-----------------------------------------------------------------------------
@@ -314,6 +385,16 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/grunt_heavy/gruntheavy_assist01.wav"
+}
+"Grunt_heavy.Assist02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b10.wav"
 }
 "Grunt_heavy.General01"
 {
@@ -415,6 +496,36 @@
 
 	"wave"			"vo/grunt_heavy/gruntheavy_general10.wav"
 }
+"Grunt_heavy.General11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b9.wav"
+}
+"Grunt_heavy.General12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b7.wav"
+}
+"Grunt_heavy.General13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b6.wav"
+}
 //-----------------------------------------------------------------------------
 // Kill Speech
 //-----------------------------------------------------------------------------
@@ -437,4 +548,14 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/grunt_heavy/gruntheavy_kill_explosive01.wav"
+}
+"Grunt_heavy.KillExplosive02"
+{	
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/grunt_heavy/b7.wav"
 }

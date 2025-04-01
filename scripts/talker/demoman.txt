@@ -41,6 +41,9 @@ Response PlayerRoundStartDemoman
 {
 	speak "Grunt_heavy.BattleCry01" predelay "1.0, 5.0"
 	speak "Grunt_heavy.BattleCry02" predelay "1.0, 5.0"
+	speak "Grunt_heavy.BattleCry03" predelay "1.0, 5.0"
+	speak "Grunt_heavy.BattleCry04" predelay "1.0, 5.0"
+	speak "Grunt_heavy.BattleCry05" predelay "1.0, 5.0"
 }
 Rule PlayerRoundStartDemoman
 {
@@ -171,6 +174,9 @@ Response KilledPlayerAssistAutoDemoman
 	speak "Grunt_heavy.General08"
 	speak "Grunt_heavy.General09"
 	speak "Grunt_heavy.General10"
+	speak "Grunt_heavy.General11"
+	speak "Grunt_heavy.General12"
+	speak "Grunt_heavy.General13"
 }
 Rule KilledPlayerAssistAutoDemoman
 {
@@ -191,7 +197,7 @@ Response KilledPlayerManyDemoman
 }
 Rule KilledPlayerManyDemoman
 {
-	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance IsWeaponSecondary KilledPlayerDelay DemomanNotKillSpeech IsDemoman
+	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance IsWeaponSecondary DemomanNotKillSpeech IsDemoman
 	ApplyContext "DemomanKillSpeech:1:10"
 	Response KilledPlayerManyDemoman
 }
@@ -214,33 +220,6 @@ Rule KilledSoldierDemoman
 	ApplyContext "DemomanKillSpeech:1:60"
 	Response KilledSoldierDemoman
 }
-
-// Frying pan responses
-// These are our base responses for non-sword melee weapons.
-Response KilledPlayerPanDemoman
-{
-	speak "Grunt_heavy.Domination01" predelay "2.5"
-	speak "Grunt_heavy.Domination02" predelay "2.5"
-	speak "Grunt_heavy.Domination03" predelay "2.5"
-	speak "Grunt_heavy.Domination04" predelay "2.5"
-	speak "Grunt_heavy.Domination05" predelay "2.5"
-	speak "Grunt_heavy.Domination06" predelay "2.5"
-	speak "Grunt_heavy.Domination07" predelay "2.5"
-}
-Rule KilledPlayerPanDemoman
-{
-	criteria ConceptKilledPlayer KilledPlayerDelay WeaponIsFryingPan 20PercentChance  DemomanNotKillSpeechMelee IsDemoman
-	ApplyContext "DemomanKillSpeechMelee:1:10"
-	Response KilledPlayerPanDemoman
-}
-
-Rule KilledPlayerSaxxyDemoman
-{
-	criteria ConceptKilledPlayer KilledPlayerDelay WeaponIsSaxxy 20PercentChance  DemomanNotKillSpeechMelee IsDemoman
-	ApplyContext "DemomanKillSpeechMelee:1:10"
-	Response KilledPlayerPanDemoman
-}
-// End Frying Pan responses
 
 // Custom rules for when Demoman drinks from Scrumpy
 // to trigger one of the above drunk lines
@@ -294,6 +273,9 @@ Response PlayerKilledCapperDemoman
 	speak "Grunt_heavy.General08"
 	speak "Grunt_heavy.General09"
 	speak "Grunt_heavy.General10"
+	speak "Grunt_heavy.General11"
+	speak "Grunt_heavy.General12"
+	speak "Grunt_heavy.General13"
 }
 Rule PlayerKilledCapperDemoman
 {
@@ -387,6 +369,9 @@ Response PlayerKilledForRevengeDemoman
 	speak "Grunt_heavy.General08"
 	speak "Grunt_heavy.General09"
 	speak "Grunt_heavy.General10"
+	speak "Grunt_heavy.General11"
+	speak "Grunt_heavy.General12"
+	speak "Grunt_heavy.General13"
 }
 Rule PlayerKilledForRevengeDemoman
 {
@@ -408,6 +393,9 @@ Response PlayerKilledObjectDemoman
 	speak "Grunt_heavy.General08"
 	speak "Grunt_heavy.General09"
 	speak "Grunt_heavy.General10"
+	speak "Grunt_heavy.General11"
+	speak "Grunt_heavy.General12"
+	speak "Grunt_heavy.General13"
 }
 Rule PlayerKilledObjectDemoman
 {
@@ -658,6 +646,9 @@ Response KilledPlayerAssistDemoman
 	speak "Grunt_heavy.General08"
 	speak "Grunt_heavy.General09"
 	speak "Grunt_heavy.General10"
+	speak "Grunt_heavy.General11"
+	speak "Grunt_heavy.General12"
+	speak "Grunt_heavy.General13"
 }
 Rule KilledPlayerAssistDemoman
 {
@@ -678,6 +669,9 @@ Response KilledPlayerAssistDemoman2
 	speak "Grunt_heavy.General08"
 	speak "Grunt_heavy.General09"
 	speak "Grunt_heavy.General10"
+	speak "Grunt_heavy.General11"
+	speak "Grunt_heavy.General12"
+	speak "Grunt_heavy.General13"
 }
 Rule KilledPlayerAssistDemoman2
 {
@@ -782,6 +776,9 @@ Response PlayerBattleCryDemoman
 {
 	speak "Grunt_heavy.BattleCry01"
 	speak "Grunt_heavy.BattleCry02"
+	speak "Grunt_heavy.BattleCry03"
+	speak "Grunt_heavy.BattleCry04"
+	speak "Grunt_heavy.BattleCry05"
 }
 Rule PlayerBattleCryDemoman
 {
@@ -808,6 +805,7 @@ Response PlayerCheersDemoman
 	speak "Grunt_heavy.Cheers01"
 	speak "Grunt_heavy.Cheers02"
 	speak "Grunt_heavy.Cheers03"
+	speak "Grunt_heavy.Cheers04"
 	speak "Grunt_heavy.Cheers04"
 }
 Rule PlayerCheersDemoman
@@ -836,6 +834,10 @@ Response PlayerJeersDemoman
 	speak "Grunt_heavy.Jeers05"
 	speak "Grunt_heavy.Jeers06"
 	speak "Grunt_heavy.Jeers07"
+	speak "Grunt_heavy.Jeers08"
+	speak "Grunt_heavy.Jeers09"
+	speak "Grunt_heavy.Jeers10"
+	speak "Grunt_heavy.Jeers11"
 }
 Rule PlayerJeersDemoman
 {
@@ -852,6 +854,10 @@ Response PlayerLostPointDemoman
 	speak "Grunt_heavy.Jeers05"
 	speak "Grunt_heavy.Jeers06"
 	speak "Grunt_heavy.Jeers07"
+	speak "Grunt_heavy.Jeers08"
+	speak "Grunt_heavy.Jeers09"
+	speak "Grunt_heavy.Jeers10"
+	speak "Grunt_heavy.Jeers11"
 }
 Rule PlayerLostPointDemoman
 {
@@ -868,6 +874,10 @@ Response PlayerNegativeDemoman
 	speak "Grunt_heavy.Jeers05"
 	speak "Grunt_heavy.Jeers06"
 	speak "Grunt_heavy.Jeers07"
+	speak "Grunt_heavy.Jeers08"
+	speak "Grunt_heavy.Jeers09"
+	speak "Grunt_heavy.Jeers10"
+	speak "Grunt_heavy.Jeers11"
 }
 Rule PlayerNegativeDemoman
 {
@@ -995,6 +1005,9 @@ Response CartMovingStoppedOffenseDemoman
 	speak "Grunt_heavy.General08"
 	speak "Grunt_heavy.General09"
 	speak "Grunt_heavy.General10"
+	speak "Grunt_heavy.General11"
+	speak "Grunt_heavy.General12"
+	speak "Grunt_heavy.General13"
 }
 Rule CartMovingStoppedOffenseDemoman                                                       
 {
