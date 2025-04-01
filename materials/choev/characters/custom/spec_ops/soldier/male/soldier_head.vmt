@@ -1,0 +1,47 @@
+"VertexLitGeneric"
+{
+//Base
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Head_D"
+	"$compress"						"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Head_D_Compress"
+	"$stretch"						"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Head_D_Stretch"
+	"$bumpmap"						"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Head_N"
+	"$bumpcompress"					"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Head_N_Compress"
+	"$bumpstretch"					"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Head_N_Stretch"
+
+//Other
+	"$lightwarptexture"				"models/player/pyro/pyro_lightwarp"
+	"$halflambert"					"0"
+
+//Phong
+	"$phong"						"1"
+	"$phongexponenttexture"			"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Head_Exponent"
+	"$phongboost"					"0.25"	
+	"$phongfresnelranges"			"[.3 1 8]"
+	"$basemapalphaphongmask"		"1"
+
+//Rimlight
+	"$rimlight"						"1"
+	"$rimlightexponent"				"4"
+	"$rimlightboost"				"2"
+	"$rimmask"						"1"
+
+//Cloaking
+	"$cloakPassEnabled" "1"
+	"$cloakColorTint" "[1 0.5 0.4]"
+	"Proxies"
+	{
+		"spy_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+	}
+}

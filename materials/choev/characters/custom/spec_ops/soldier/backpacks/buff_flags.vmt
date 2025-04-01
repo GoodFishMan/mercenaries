@@ -1,0 +1,26 @@
+"VertexlitGeneric"
+{
+//Main
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Soldier/Backpacks/Buff_Flags_D"
+	"$bumpmap"						"ChoEv/Characters/Custom/Spec_Ops/Soldier/Backpacks/Buff_Flags_N"
+
+//Other
+	"$halflambert"					"1"
+	"$lightwarptexture"				"models/player/pyro/pyro_lightwarp"
+	"$normalmapalphaphongmask"		"1"
+
+//Phong
+	"$phong"						"1"
+	"$phongexponent"				"5"
+	"$phongboost"					"0.05"
+	"$phongfresnelranges"			"[0.15 0.15 0.15]"
+
+//Self Illumination
+	"$selfillum"					"1"
+	"$selfillummask"				"ChoEv/Characters/Custom/Spec_Ops/Soldier/Backpacks/Backpack_E"
+
+//Rimlight
+	"$rimlight"						"1"	
+	"$rimlightexponent"				"50"
+	"$rimlightboost"				"1"
+}

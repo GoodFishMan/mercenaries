@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+//Main
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Shared/Boots_D"
+	"$bumpmap"						"ChoEv/Characters/Custom/Spec_Ops/Shared/Boots_N"
+
+//Other
+	"$halflambert"					"1"
+	"$lightwarptexture"				"models/player/pyro/pyro_lightwarp"
+	"$normalmapalphaphongmask"		"1"
+
+//Phong
+	"$phong"						"1"
+	"$phongexponent"				"15"
+	"$phongboost"					"0.25"	
+	"$phongfresnelranges"			"[0.15 0.15 0.15]"
+
+//Rimlight
+	"$rimlight"						"1"	
+	"$rimlightexponent"				"50"
+	"$rimlightboost"				"1"
+}

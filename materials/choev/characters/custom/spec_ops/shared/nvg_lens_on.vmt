@@ -1,0 +1,69 @@
+"UnLitGeneric"
+{
+//Base
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Shared/NVG_Lens_On_D"
+
+//Other
+	"$lightwarptexture"				"models/player/pyro/pyro_lightwarp"
+	"$normalmapalphaphongmask"		"1"
+	"$halflambert"					"1"
+	"$ambientocclusion"				"1"
+
+//Phong	
+	"$phong" 						"1"
+	"$phongboost"					"5"
+	"$phongexponent"				"50"
+	"$phongfresnelranges"			"[0.05 .5 1]"
+
+//Rimlight
+	"$rimlight"						"1"
+	"$rimlightExponent"				"20"
+	"$rimlightBoost"				"0.15"
+
+//Color
+	"$color2"						"{0.75 0.75 0.75}"
+	"$colortint_base"				"{50 50 50}"
+	"$colortint_tmp"				"[0 0 0]" 
+	"$blendtintbybasealpha"			"1"
+ 	"$blendtintcoloroverbase"		"0"  
+
+//Cloaking
+	$cloakPassEnabled				"1"
+
+	"Proxies"
+	{
+		"invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+		"ItemTintColor"
+		{
+			"resultVar" "$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"	"$colortint_tmp"
+			"srcVar2"	"$colortint_base"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{	
+//Base
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Shared/Balaclava_D"
+	"$bumpmap"						"ChoEv/Characters/Custom/Spec_Ops/Shared/Balaclava_N"
+
+//Other
+	"$lightwarptexture"			"models/player/pyro/pyro_lightwarp"
+	"$normalmapalphaphongmask"	"1"
+	"$halflambert"				"1"
+	"$ambientocclusion"			"1"
+
+//Phong	
+	"$phong" 					"1"
+	"$phongboost"				"0.25"
+	"$phongexponent"			"5"
+	"$phongfresnelranges"		"[0.05 .5 1]"
+
+//Rimlight
+	"$rimlight" 			    "1"
+	"$rimlightExponent"         "20"
+	"$rimlightBoost"            "0.15"
+}

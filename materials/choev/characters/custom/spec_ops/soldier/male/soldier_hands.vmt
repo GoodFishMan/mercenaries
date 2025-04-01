@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+//Base
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Soldier/Male/Soldier_Hands_D"
+	"$basemapalphaphongmask"		"1"
+
+//Other
+	"$lightwarptexture"				"models/lightwarps/hand_lightwarp"
+
+//Phong
+	"$phong"						"1"
+	"$phongexponent"				"10"
+	"$phongboost"					".65"	
+	"$phongfresnelranges"			"[.3 .6 3]"
+
+//Rimlight
+	"$rimlight"						"1"
+	"$rimlightexponent"				"4"
+	"$rimlightboost"				".5"
+}

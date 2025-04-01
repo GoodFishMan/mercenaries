@@ -1,0 +1,66 @@
+"VertexLitGeneric"
+{
+//Main
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Shared/Glass"
+
+//Other
+	"$halflambert"					"0"
+	"$lightwarptexture"				"models/lightwarps/weapon_lightwarp"
+
+//Phong
+	"$phong"						"1"
+	"$phongboost"					"1"
+	"$phongexponent"				"80"
+	"$phongfresnelranges"			"[1 2 2.5]"
+
+//Transparicy
+	"$translucent"					"1"
+
+//Envmap
+	"$envmap"						"env_cubemap"
+	"$envmapcontrast"				"1"
+	"$envmapsaturation"				"1"
+	"$envmaptint"					"[0.1 0.1 0.1]"
+
+//Rimlight
+	"$rimlight"						"1"	
+	"$rimlightexponent"				"50"
+	"$rimlightboost"				"0.5"
+
+//Cloaking
+	"$cloakPassEnabled"				"1"
+	"$detail"						"effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale"					"5"
+	"$detailblendfactor"			"0"
+	"$detailblendmode"				"6"
+	"$yellow"						"0"
+	">=DX90"
+	{
+		"$selfillum"		"0"
+	}
+	"proxies"
+	{
+		"invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar"		"$detail"
+			"animatedtextureframenumvar"		"$detailframe"
+			"animatedtextureframerate"		"30"
+		}
+		"BurnLevel"
+		{
+			"resultVar"		"$detailblendfactor"
+		}
+		"YellowLevel"
+		{
+			"resultVar"		"$yellow"
+		}
+		"Equals"
+		{
+			"srcVar1"		"$yellow"
+			"resultVar"		"$color2"
+		}
+	}
+}

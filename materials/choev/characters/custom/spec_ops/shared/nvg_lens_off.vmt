@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+//Base
+	"$basetexture"					"ChoEv/Characters/Custom/Spec_Ops/Shared/NVG_Lens_Off_D"
+
+//Other
+	"$lightwarptexture"				"models/player/pyro/pyro_lightwarp"
+	"$normalmapalphaphongmask"		"1"
+	"$halflambert"					"1"
+	"$ambientocclusion"				"1"
+
+//Phong	
+	"$phong" 						"1"
+	"$phongboost"					"5"
+	"$phongexponent"				"50"
+	"$phongfresnelranges"			"[0.05 .5 1]"
+
+//Rimlight
+	"$rimlight"						"1"
+	"$rimlightExponent"				"20"
+	"$rimlightBoost"				"0.15"
+}

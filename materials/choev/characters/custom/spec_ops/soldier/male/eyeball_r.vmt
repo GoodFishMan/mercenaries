@@ -1,0 +1,23 @@
+"EyeRefract"
+{
+	"$Iris"							"ChoEv/Characters/Custom/Spec_Ops/Shared/Eyeball_Iris"
+	"$AmbientOcclTexture"			"ChoEv/Characters/Custom/Spec_Ops/Shared/Eyeball_AO"
+	"$Envmap"						"ChoEv/Characters/Custom/Spec_Ops/Shared/Eyeball_Cubemap"
+	"$CorneaTexture"				"ChoEv/Characters/Custom/Spec_Ops/Shared/Eyeball_Cornea"
+	"$lightwarptexture"				"ChoEv/Characters/Custom/Spec_Ops/Shared/Eyeball_Lightwarp"
+
+	"$EyeballRadius"				".8"
+	"$AmbientOcclColor"				"[0.2 0.2 0.2]"
+	"$Dilation"						"0.5"
+	"$ParallaxStrength"				"0.25"
+	"$CorneaBumpStrength"			"1"
+
+	"$halflambert"					"1"
+	"$nodecal"						"1"
+
+//These effects are only available in ps.2.0b and later
+	
+	"$ambientocclusion"				"1"
+	"$RaytraceSphere"				"1"
+	"$SphereTexkillCombo"			"0"
+}
