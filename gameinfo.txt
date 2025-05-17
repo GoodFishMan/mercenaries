@@ -63,6 +63,24 @@
 			game				|appid_440|tf
 			game				|appid_243750|hl2
 			platform			|appid_243750|platform
+			
+			// DOWN BELOW USED FOR HAMMER //
+			game_lv				hl2/hl2_lv.vpk
+			game				|all_source_engine_paths|hl2/hl2_textures.vpk 
+			game				|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
+			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
+			game				|all_source_engine_paths|hl2/hl2_misc.vpk
+			platform			|all_source_engine_paths|platform/platform_misc.vpk
+			
+			game				|all_source_engine_paths|hl2
+			platform			|all_source_engine_paths|platform
+			
+			game				"|all_source_engine_paths|../Team Fortress 2/tf/tf2_sound_misc.vpk"
+			game				"|all_source_engine_paths|../Team Fortress 2/tf/tf2_misc.vpk"
+			game				"|all_source_engine_paths|../Team Fortress 2/tf/tf2_sound_vo_english.vpk"
+			game				"|all_source_engine_paths|../Team Fortress 2/tf/tf2_textures.vpk"
+
+			// END OF HAMMER //
 
 			// Random files downloaded from gameservers go into a seperate directory, so
 			// that it's easy to keep those files segregated from the official game files
