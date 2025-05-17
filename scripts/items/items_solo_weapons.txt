@@ -104,8 +104,8 @@
 		"weapon_test3"
 		{
 			"item_name"	"SMG22"
-			"model_player"	"models/weapons/cstrike/c_smg_mac10.mdl"
-			"model_world"	"models/weapons/w_smg_mac10.mdl"
+			"model_player"	"models/weapons/w_models/w_smg.mdl"
+			"model_world"	"models/weapons/w_models/w_smg.mdl"
 			"attach_to_hands"	"0"
 			"flip_viewmodel"	"1"
 			"static_attrs"
