@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/elbow_crane_d"
+	"$surfaceprop" "Metal"
+	"$bumpmap" "models/props_canaveral/elbow_crane_n"
+	"$phong" 1
+	"$phongboost" 2
+//	"$phongexponenttexture" "models/props_canaveral/elbow_crane_n"
+	"$phongexponentfactor" 10
+	"$phongfresnelranges"	"[0.2 0.2 0.2]"
+	"$invertphongmask" 1
+}

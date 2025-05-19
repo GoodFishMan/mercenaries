@@ -1,0 +1,11 @@
+"WorldVertexTransition"
+{
+	"$basetexture"	"canaveral/sand_canaveral_01"
+	"$basetexture2" "Nature/grass_07"
+	"$bumpmap" "canaveral/sand_canaveral_01_n"
+	"$surfaceprop" "sand"
+	"$surfaceprop2" "grass"
+	"$blendmodulatetexture" "Nature/grass_blendmask"
+//	"%detailtype" "tf_forest_grass"
+	"%keywords" "tf"
+}

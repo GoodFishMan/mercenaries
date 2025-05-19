@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/towerclock_001a"
+	"$bumpmap" "models\props_overgrown/towerclock_001_n" 
+
+	"$phong" "1"	
+	"$phongfresnelranges"	"[.7 15 20]"
+	"$nodecal" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" "2"	
+}
+

@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "canaveral/exterior_walls_blu1"
+	"$bumpmap" "canaveral/exterior_walls_n"
+//	"$envmapmask" "canaveral/exterior_walls_envmap"
+//	"$envmap" "env_cubemap"
+//	"$envmaptint" "[.1 .1 .1]"
+	"$surfaceprop" "Metal"
+	"%keywords" "tf"
+}

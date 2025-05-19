@@ -1,0 +1,4 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/mvm_colony/heavyrail3"
+	$surfaceprop metal

@@ -1,0 +1,36 @@
+"Water"
+{
+	"%keywords" "tf"
+	"%tooltexture" "canaveral/water_ocean_normal2"
+	"%compilewater" 1
+	"$abovewater" 1
+	"$envmap" "env_cubemap"	
+
+
+	"$scale" "[1 1]"
+	"$normalmap" "canaveral/water_ocean_normal2"
+	"$surfaceprop" "water"
+	"$bottommaterial" "canaveral/water_ocean_beneath2"
+	"$bumpframe" "0"
+
+	"$fogenable" 1
+	"$fogcolor" "{48 120 154}"
+	"$fogstart" "128"
+	"$fogend" "1024"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$normalmap"
+			"animatedtextureframenumvar" "$bumpframe"
+			"animatedtextureframerate" 30.00
+		}
+		"WaterLOD"
+		{
+			// fixme!  This has to be here, or material loading barfs.
+			"dummy" 0
+		}
+	}
+
+}

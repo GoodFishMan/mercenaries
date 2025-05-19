@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_office/penholder"
+	"$bumpmap"				"models/props_office/penholder_nrm"
+	"$surfaceprop" 			"Wood"
+	
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" ".5"	
+	"$halflambert"	"1"
+	"$phongfresnelranges"	"[.7 10 5]"
+
+	
+}

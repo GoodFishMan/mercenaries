@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/pennants_001a"
+	"$translucent" "1"
+	"$alphatest" "1"
+}

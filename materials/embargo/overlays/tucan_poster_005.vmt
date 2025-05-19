@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "embargo/overlays/tucan_poster_005"
+    	"$decal" 1
+	"$decalscale" 0.25
+	"$translucent" 1
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+
+	"%keywords" "tf, zeus"
+}

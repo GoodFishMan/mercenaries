@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/props_favela/favela_skybox_parasolc"
+	$nocull "1"
+}

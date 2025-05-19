@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	$basetexture "models/props_favela/dry_clothers_03"
+
+	$phong 1
+	$phongfresnelranges "[0.23 0.12 6]"
+	$phongexponent 10
+	$phongboost 0.1
+	$basemapalphaphongmask 1
+}

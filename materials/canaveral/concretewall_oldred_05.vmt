@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "canaveral/concretewall_oldred_base_r3"
+	"$bumpmap" "canaveral/concretewall_oldred_base_n"
+	"%keywords" "tf"
+	"$surfaceprop" "Concrete"
+}

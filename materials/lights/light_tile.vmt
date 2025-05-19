@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "lights/light_tile"
+	"$selfillum"	"1"
+}

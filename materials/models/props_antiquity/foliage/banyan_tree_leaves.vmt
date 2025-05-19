@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props_antiquity\foliage\banyan_tree_leaves"
+	"$model" 1
+	"$nocull" 1
+	"$alphatest" 1
+}

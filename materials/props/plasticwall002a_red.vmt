@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Props/plasticwall002a"
+	"$bumpmap" "Props/plasticwall002a_normal"
+	"%keywords" "tf"
+	"$color" "{80 45 30}"
+	"$color2" "{175 160 160}"
+}

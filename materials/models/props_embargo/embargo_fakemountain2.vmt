@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+$basetexture	"models/props_embargo/embargo_fakemountain2"
+$model 			1
+"$nofog" "1"
+}

@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/whiteboard_01"
+	"$surfaceprop" "Metal"
+}

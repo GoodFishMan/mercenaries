@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/arm_mat_d"
+	"$nocull" 1
+}

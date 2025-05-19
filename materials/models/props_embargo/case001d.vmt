@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_embargo/case001d"
+
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongexponent" "40"
+	"$phongboost" "1.5"	
+	"$phongfresnelranges"	"[.7 15 20]"
+
+	"$detail" "overlays/detail004"
+	"$detailscale" "1.5"
+	"$detailblendmode" "0"
+	"$detailblendfactor" "0.3"
+}

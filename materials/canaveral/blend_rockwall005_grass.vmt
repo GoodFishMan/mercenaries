@@ -1,0 +1,11 @@
+"WorldVertexTransition"
+{
+	"$basetexture"	"nature/rockwall005"
+	"$basetexture2" "Nature/grass_07"
+	"$surfaceprop" "rock"
+	"$ssbump" "1"
+	"$surfaceprop2" "grass"
+	"$blendmodulatetexture" "Nature/grass_blendmask"
+//	"%detailtype" "tf_forest_grass"
+	"%keywords" "tf"
+}

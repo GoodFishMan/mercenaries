@@ -1,0 +1,8 @@
+"UnLitGeneric"
+{
+	$basetexture "models/props_embargo/embargo_lighthouse2b"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.5 .5 .5]"
+	"$phongfresnelranges"	"[1 .5 .25]"
+}

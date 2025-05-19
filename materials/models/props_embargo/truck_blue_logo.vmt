@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\props_embargo\truck_blue_logo"
+    "$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongexponent" "30"
+	"$phongboost" ".2"	
+    "$phongfresnelranges"	"[2 1.5 4]"
+	"$rimlight" 1
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" ".5"
+}

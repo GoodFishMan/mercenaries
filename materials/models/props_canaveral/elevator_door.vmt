@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/elevator_door_dif"
+	"$surfaceprop" "MetalPanel"
+	"$bumpmap" "models/props_canaveral/elevator_door_n"
+//	"$envmap" "env_cubemap"
+	"$phong" 1
+	"$phongboost" 5
+//	"$phongexponenttexture" "models/props_canaveral/rocket_engine_p"
+	"$phongexponentfactor" 100
+	"$phongfresnelranges"	"[0.2 0.2 0.2]"
+	"$invertphongmask" 0
+}

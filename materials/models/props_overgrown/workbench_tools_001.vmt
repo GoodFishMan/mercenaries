@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/workbench_tools_001"
+	"$bumpmap" "models\props_overgrown/workbench_tools_001_n" 
+
+}

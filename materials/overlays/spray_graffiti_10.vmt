@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "overlays/slum_graffiti_10"
+	"$decal" 1
+	"$decalscale" 0.25
+	"$translucent" 1
+}

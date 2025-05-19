@@ -1,0 +1,7 @@
+"Vertexlitgeneric"
+{
+	"$basetexture"	"glass/glasswindow002a"
+	"$alpha"	".4"
+	"$translucent"	"1"
+	"$envmap" "env_cubemap"
+}

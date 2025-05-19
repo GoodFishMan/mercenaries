@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/pipes_base"
+//	$bumpmap "effects/flat_normal"
+//	$phong 1
+//	$phongexponent 10
+//	$phongboost 1
+//	$phongfresnelranges "[1 1 1]"
+}

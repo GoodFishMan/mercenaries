@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\squeezit\fuel_spill_01"
+	"$bumpmap" "models\squeezit\fuel_spill_01_normal"
+	$translucent 1
+//	$alphatest 1
+	"$bumptransform" "center .5 .5 scale .5 .5   rotate 45 translate 0 0"
+//	$selfillum 1
+
+	"$lightwarptexture" "models/lightwarps/jarate_lightwarp"
+
+	$envmap "cubemaps/cubemap_oil"
+	$envmaptint "[ 0.125 0.125 0.125 ]"
+
+
+
+
+
+}

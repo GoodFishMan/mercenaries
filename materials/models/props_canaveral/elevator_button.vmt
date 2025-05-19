@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/elevator_button_d"
+	"$bumpmap" "effects/flat_normal"
+	"$phong" 1
+	"$phongboost" 5
+	"$phongexponentfactor" 5
+	"$phongfresnelranges"	"[0.2 0.2 0.2]"
+	"$invertphongmask" 0
+
+}

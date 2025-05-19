@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	$basetexture "models/props_favela/crate_tarp"
+	$bumpmap "models/props_favela/crate_tarp_normal"
+
+	$color2 "[0.65 0.61 0.59]"
+}

@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "overlays/spray_dead"
+        "$decal" 1
+	"$decalscale" 0.25
+	"$translucent" 1
+	"%keywords" "slum"
+}
+

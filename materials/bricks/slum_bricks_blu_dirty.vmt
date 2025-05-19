@@ -1,0 +1,13 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "bricks/slum_bricks_blu_dirty"
+	"$basetexture2" "concrete/slum_concrete_blu_light_02"
+	"%tooltexture" "bricks/slum_bricks_icon"
+	"$bumpmap" "bricks/slum_bricks_normal"
+	"$blendmodulatetexture" "bricks/slum_bricks_blendmask"
+	"%keywords" "tf"
+	"$ssbump" "1"
+	"$surfaceprop" "concrete"
+
+
+}

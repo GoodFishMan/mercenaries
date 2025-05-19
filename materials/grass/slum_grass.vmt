@@ -1,0 +1,10 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "grass/slum_grass"
+	"$basetexture2" "dirt/slum_dirt_01"
+	"%tooltexture" "grass/slum_grass_icon"
+	"%keywords" "tf"
+	"$surfaceprop" "grass"
+
+
+}

@@ -1,0 +1,5 @@
+VertexLitGeneric
+{
+$basetexture	"models/props_salvador/salvador_window1"
+$model 			1
+}

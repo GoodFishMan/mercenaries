@@ -1,0 +1,28 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "canaveral/water_ocean2_foam_rough"
+	"$normalmap" "canaveral/water_ocean_normal2"
+	"$surfaceprop" "Water"
+	"$nodecal" 1
+	"$decal" "1"
+	"$translucent" 1
+	"%keywords" "tf"
+	"$vertexcolor" "1"
+    	"$vertexalpha" "1"
+	"$blendmodulatetexture" "Nature/grass_blendmask"
+	"Proxies"
+	{
+	"AnimatedTexture"
+		{
+		"animatedTextureVar" "$basetexture"
+		"animatedTextureFrameNumVar" "$frame"
+		"animatedTextureFrameRate" "30"
+		}
+	"AnimatedTexture"
+		{
+		"animatedtexturevar" "$normalmap"
+		"animatedtextureframenumvar" "$bumpframe"
+		"animatedtextureframerate" 30.00
+		}
+	}
+}

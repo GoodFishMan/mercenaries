@@ -1,0 +1,14 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "tile/embargo_tile_floor_001"
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"[.2 .2 .2]"
+	"$envmapcontrast"	".5"
+	"$fresnelreflection"	".2"
+
+
+	"$basealphaenvmapmask" "1"
+	"$basemapalphaphongmask" "1"
+
+	"%keywords" "tf, zeus"
+}

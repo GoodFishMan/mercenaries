@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "office/woodpanel01d"
+	"$bumpmap"	"office/woodpanel01d_nrm"
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"[.2 .2 .2]"
+	"$envmapcontrast"	".5"
+	"$fresnelreflection"	".2"
+	"$surfaceprop" "wood"
+}

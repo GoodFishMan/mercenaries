@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	$basetexture "models/props_soho/corrugated001"
+
+	$color2 "[0.92 0.79 0.77]"
+}

@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	$basetexture	"models/props_embargo/rpz_modularsofared"
+	$halflambert 1	
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "3"	
+//	"$lightwarptexture" "models/weapons/c_models/c_ambassador/c_ambassador_lightwarp"
+	"$phongfresnelranges"	"[.25 .5 1]"
+//	"$phongwarptexture"  "models/weapons/c_models/c_ambassador/c_ambassador_phongwarp"
+	"$rimlight" "1"
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "2"
+}

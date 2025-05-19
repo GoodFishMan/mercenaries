@@ -1,0 +1,19 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "models/props_oil/doors/oil_door"
+	"$bumpmap" "models/props_oil/doors/oil_door_norm"
+	"$bumpmapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongexponent" "1.01"
+	"$phongboost" "2.5"
+		"$lightwarptexture" "models\lightwarps\icey_lightwarp"
+	//"$phongfresnelranges"	"[.25 .5 .81]"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	
+	"$surfaceprop" "glass"
+	"%keywords" "tf"
+	
+	"$translucent" 1
+//	"$alphatest" "1"
+	"$nodecal" "1"
+}

@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "tile/sandy_curb_trim_001"
+
+	"$surfaceprop" "concrete"
+	"%keywords" "tf, zeus"
+
+	"$detail" "overlays/detail001"
+	"$detailscale" "[2 0.25]"
+	"$detailblendmode" "0"
+	"$detailblendfactor" "1"
+}
+

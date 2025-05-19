@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/light_inset_d2"
+	"$selfillum" 1
+	"$surfaceprop" "Metal"
+}

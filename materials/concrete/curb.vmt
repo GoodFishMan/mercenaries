@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "concrete/curb"
+
+	"%keywords" "tf, zeus"
+	"$surfaceprop" "concrete"
+}

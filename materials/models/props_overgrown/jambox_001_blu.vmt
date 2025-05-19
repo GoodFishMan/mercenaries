@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/jambox_001_blu"
+	"$bumpmap" "models\props_overgrown/jambox_001_n"
+	
+	"$phong" "1"
+	"$phongexponent" "70"
+	"$phongboost" "1"
+	"$phongfresnelranges"	"[.8 1 4]"
+	
+	
+}

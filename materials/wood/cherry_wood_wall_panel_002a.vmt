@@ -1,0 +1,14 @@
+"LightmappedGeneric"
+{
+	"$baseTexture"	"wood/cherry_wood_wall_panel_002a"
+	"$bumpmap" 	"wood/cherry_wood_wall_panel_002a_normal"
+	"$surfaceprop"	"wood"
+
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"[.2 .2 .2]"
+	"$envmapcontrast"	".5"
+	"$fresnelreflection"	".2"
+
+	"%keywords"	"tf, zeus"
+
+}

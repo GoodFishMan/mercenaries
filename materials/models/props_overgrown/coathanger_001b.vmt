@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/coathanger_001b"
+	"$bumpmap" "models\props_overgrown/coathanger_001_n" 
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "0.1"
+	"$phongfresnelranges"	"[.8 1 4]"
+
+}

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/props_oil/coast_helicopter_blades"
+	"$nocull" "1"
+	"$translucent" "1"
+}

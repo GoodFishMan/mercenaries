@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models\props_embargo\cia_chopper_blade_sprite"
+	"$translucent" "1"
+	"$selfillum" "1"
+	"$nocull" "1"
+}

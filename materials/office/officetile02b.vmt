@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "office/officetile02b"
+//	"$bumpmap"	"office/officetile01_nrm"
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"[.5 .5 .5]"
+	"$envmapcontrast"	".5"
+	"$fresnelreflection"	".6"
+	"$surfaceprop" "Tile"
+}

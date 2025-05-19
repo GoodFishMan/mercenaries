@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_oil/coast_helicopter_yellow_wrecked"
+	"$bumpmap" "models/props_oil/coast_helicopter_normal"
+	"$bumpmapalphaphongmask" "1"
+
+	"$lightwarptexture" "models\props_vehicles\pickup_lightwarp"
+}

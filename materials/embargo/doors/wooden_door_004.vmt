@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture"	"embargo/doors/wooden_door_004"
+	"$surfaceprop"	"wood"
+
+	"%keywords"	"tf, zeus"
+}

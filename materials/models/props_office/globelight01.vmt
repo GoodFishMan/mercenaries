@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_office/globelight01"
+	"$bumpmap"				"models/props_office/globelight01_nrm"
+	"$surfaceprop" 			"Metal"
+	
+	"$selfillum"			"1"
+	
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "1"	
+	"$halflambert"	"1"
+	"$phongfresnelranges"	"[.7 15 20]"
+	
+}

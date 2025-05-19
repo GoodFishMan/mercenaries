@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/props_urban/generator_light01"
+	"$surfaceprop" "metal"
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "1"
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.3 .5 .5]"
+//	"$halflambert" "0"
+//	"$rimlight" "1"                                                // To enable rim lighting (requires phong)
+//	"$rimlightexponent" "75"                                        // Exponent for phong component of rim lighting
+//	"$rimlightboost" ".2"                                        // Boost for ambient cube component of rim lighting
+//	"$rimmask" "1"                  // Use the alpha channel of the $phongexponenttexture as a rim mask
+
+	"$basemapalphaphongmask" 1 
+
+
+	"%keywords" "tf"
+	"$detailscale" "1"
+	"$detailblendmode" "0"
+	"$detailblendfactor" "1"
+}

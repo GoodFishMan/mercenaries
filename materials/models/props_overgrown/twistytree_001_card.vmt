@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/twistytree_001_card"
+	"$translucent" "1"
+	"$alphatest" "1"
+}

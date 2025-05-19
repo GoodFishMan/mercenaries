@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_office/document01"
+	"$surfaceprop" 			"grass"
+}

@@ -1,0 +1,24 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models/props_embargo/embargo_chndlr2"
+	"$surfaceprop"	"glass"
+	"$bumpmap"	"models/props_embargo/embargo_chndlr2_n"
+	"$translucent" "1"
+	"$nocull" "1"
+	"$phong" "1"
+	"$phongtint" "[1 .5 .1]"
+
+	"$envmap" "cubemaps/cubemap_gold001" 
+	"$envmapcontrast" 1
+	"$envmaptint" "[3 3 3]"
+
+	"$lightwarptexture" "models/weapons/c_models/c_ambassador/c_ambassador_lightwarp"
+	"$phongwarptexture"  "models/weapons/c_models/c_ambassador/c_ambassador_phongwarp"
+	"$phongexponent" ".1"
+	"$phongboost" "20"	
+	"$phongfresnelranges"	"[1.5 .5 3]"
+	"$rimlight" "1"
+	"$rimlightexponent" "1"	
+	"$rimlightboost" "20"
+	"$model" 			"1"
+}

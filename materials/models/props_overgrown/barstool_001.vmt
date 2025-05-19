@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/barstool_001"
+	"$bumpmap" "models\props_overgrown/barstool_001_n" 
+
+}

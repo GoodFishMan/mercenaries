@@ -1,0 +1,8 @@
+"Spritecard"
+{
+    //"srgb?$overbrightfactor" "1.5"
+    "$baseTexture" "canaveral/foam_peak_1"
+    $translucent 1
+    "$addself" "0"
+    $DEPTHBLEND 0
+}

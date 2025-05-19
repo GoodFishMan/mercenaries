@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "soho/StreetFloor001_mossy"
+	"$bumpmap"	"soho/StreetFloor001_normal"
+	"%keywords" "tf"
+
+}

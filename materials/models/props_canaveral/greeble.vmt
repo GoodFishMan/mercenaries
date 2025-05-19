@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/greebles_d"
+	"$surfaceprop" "MetalPanel"
+	"$bumpmap" "models/props_canaveral/greebles_n"
+	"$phong" 1
+	"$phongboost" 2
+//	"$phongexponenttexture" "models/props_canaveral/rocket_engine_p"
+	"$phongexponentfactor" 100
+
+	"$phongfresnelranges"	"[0.2 0.2 0.2]"
+	"$invertphongmask" 1
+}

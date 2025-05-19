@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_casino/dice_001"
+	"$bumpmap" "models/props_casino/dice_normal"
+
+	"$fresnelreflection"	".2"
+	"$phong" "1"
+	"$phongexponent" "50"
+	"$phongboost" ".5"	
+	"$phongfresnelranges"	"[.75 5 1]"
+}

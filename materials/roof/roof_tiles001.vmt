@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "roof/roof_tiles001"
+	"$bumpmap" "roof/roof_tiles001_normal"
+
+	"$surfaceprop" "concrete"
+	"%keywords" "tf, zeus"
+
+	"$detail" "overlays/detail001"
+	"$detailscale" "1.9"
+	"$detailblendmode" "0"
+	"$detailblendfactor" "1"
+}

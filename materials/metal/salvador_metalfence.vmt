@@ -1,0 +1,7 @@
+"LightMappedGeneric"
+{
+$basetexture	"metal/salvador_metalfence"
+$surfaceprop	"default"
+	"%keywords" "tf,rpz,salvador"
+	"$translucent" 1
+}

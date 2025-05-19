@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	// texture by LaserSofa
+	"$basetexture" "overlays/arrow-blu-3"
+	"$decal" 1
+	"$decalscale" .25
+	"$translucent" 1
+	"%keywords" "tf"
+}
+
+

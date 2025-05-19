@@ -1,0 +1,36 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\buildables\sentry1/mini_sentry_light_yellow"
+	"$bumpmap" "models/effects/flat_normal" 
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongboost" "10"
+	"$phongexponent" "25"
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges"	"[.5 1.5 10]"
+	
+	//"$selfillum" "1"
+
+	"$EmissiveBlendEnabled" 		"1"
+	"$EmissiveBlendStrength" 		"1"
+	"$EmissiveBlendTexture" 		"vgui/white"
+	"$EmissiveBlendBaseTexture" 	"models/props_embargo/truck_mini_light_yellow_emissive"
+	"$EmissiveBlendFlowTexture" 	"vgui/white"
+	"$EmissiveBlendTint" 		"[1 0.90 0.20]"
+	"$EmissiveBlendScrollVector"		"[0 0]" 	
+
+	"$rimlight" "1"		
+	"$rimlightexponent" "4"				
+	"$rimlightboost" "1.5"
+
+	"Proxies"
+	{		
+		"Sine" // a proxy which produces a sine wave
+		{
+			resultVar 		$EmissiveBlendStrength // The shader parameter to be manipulated
+			sineperiod	0.5
+			sinemin	 	0.25
+			sinemax		1
+		}
+	}
+}

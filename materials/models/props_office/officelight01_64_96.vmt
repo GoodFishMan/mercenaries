@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_office/officelight01_64_96"
+//	"$bumpmap"				"models/props_office/largeroundlight01_nrm"
+	"$surfaceprop" 			"metal"
+	
+//	"$phong" 				"1"
+//	"$phongexponent" 		"35"
+//	"$phongboost" 			"1"	
+//	"$phongfresnelranges"	"[.7 15 10]"
+//	"$phongtint"			"[.9 .7 .5]"
+	
+	"$selfillum"			"1"
+	"$selfillumtint"		"1.1"
+	
+}

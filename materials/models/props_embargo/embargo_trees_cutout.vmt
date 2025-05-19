@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+$basetexture	"models/props_embargo/embargo_trees_cutout"
+$translucent 1
+$nofog 1
+$model 			1
+}

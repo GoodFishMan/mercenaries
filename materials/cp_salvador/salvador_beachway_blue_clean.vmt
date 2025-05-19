@@ -1,0 +1,15 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "cp_salvador/salvador_beachway_blue_clean"
+	"$surfaceprop" "concrete"
+	"%keywords" "salvador, tf"
+
+	
+	$bumpmap "cp_salvador/spec/salvador_beachway_bump"
+
+	$detail detail\noise_detail_01 
+	$detailscale 8
+	$detailblendfactor 0.1
+	$detailblendmode 0
+
+}

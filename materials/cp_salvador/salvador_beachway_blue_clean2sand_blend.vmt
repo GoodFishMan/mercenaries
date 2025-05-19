@@ -1,0 +1,24 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "cp_salvador/salvador_beachway_blue_clean"
+	$bumpmap "cp_salvador/spec/salvador_beachway_bump"
+	"$surfaceprop" "concrete"
+
+
+
+	"$basetexture2" "cp_salvador/salvador_beachway_blue"
+	$bumpmap2 "cp_salvador/spec/salvador_beachway_bump"
+	"$surfaceprop2" "concrete"
+
+
+	$blendmodulatetexture "cp_salvador/salvador_beachway_vertextransitionmap"
+	%tooltexture "cp_salvador/salvador_beachway_blue_clean2sand_tooltex"
+	"%keywords" "salvador, tf, blend"
+
+	$detail detail\noise_detail_01 
+	$detailscale 8
+	$detailblendfactor 0.1
+	$detailblendmode 0
+
+	
+}

@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/folding_chair_d2"
+	"$surfaceprop" "MetalPanel"
+}

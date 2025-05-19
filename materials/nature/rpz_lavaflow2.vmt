@@ -1,0 +1,18 @@
+"unlitGeneric"
+{
+	"$basetexture" "nature/rpz_lavaflow2"
+	"$surfaceprop" "No_decal"
+	"$nodecal" "1"
+	"$selfillum" 1
+	"$selfillumtint" "[2 2 2]"
+	"%keywords" "tf,rpz"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" -0.1
+			"texturescrollangle" 92
+		}
+	}
+}

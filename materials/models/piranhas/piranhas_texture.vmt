@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+ "$basetexture" "models/Piranhas/piranhas_texture" 
+ 
+	"$phong" "1"
+	"$phongexponent" "1"
+	"$phongboost" "10.5"
+}

@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\props_overgrown/parasol_001"
+	"$bumpmap" "models\props_overgrown/parasol_001_n" 
+
+	"$phong" "1"
+	"$phongexponent" "50"
+	"$phongboost" "0.2"		
+	"$phongfresnelranges"	"[.7 15 20]"
+	"$nodecal" "1"	
+}

@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "signs/sign090"
+        "$decal" 1
+	"$decalscale" 1
+	"$translucent" 1
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"%keywords" "tf"
+	"$color" "{185 35 35}"
+	"$color2" "{270 270 270}"
+}

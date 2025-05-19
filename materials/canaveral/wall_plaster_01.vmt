@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "canaveral/wall_plaster_01"
+	"$surfaceprop" "Concrete"
+	"$detail" "overlays/detail001"
+	"$detailscale" "1.9"
+	"$detailblendmode" "0"
+	"$detailblendfactor" "1"
+	"%keywords" "tf"
+}

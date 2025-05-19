@@ -1,0 +1,12 @@
+ "VertexLitGeneric"
+{
+	$baseTexture "glass/glasswindow002a"
+	//basetexturetransform "center .5 .5 scale 12 12 rotate 45 translate 0 0"
+	"$surfaceprop" "glass"
+	"$translucent" 1
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" ".25"	
+	"$phongfresnelranges"	"[.7 15 20]"
+	"%keywords" "tf"
+}

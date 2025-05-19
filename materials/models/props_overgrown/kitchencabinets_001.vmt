@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	$basetexture "models/props_overgrown/kitchencabinets_001"
+
+	$phong 1
+	$phongfresnelranges "[0.59 0.8 1]"
+	$halflambert 1
+	$phongexponent 71
+	$phongboost 0.67
+	$basemapalphaphongmask 1
+}

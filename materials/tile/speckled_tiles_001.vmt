@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "tile/speckled_tiles_001"
+	"$bumpmap" "tile/speckled_tiles_normal"
+
+	"$envmap"	"env_cubemap"
+	"$envmaptint"	"[.2 .2 .2]"
+	"$envmapcontrast"	".5"
+	"$fresnelreflection"	".2"
+
+	"%keywords" "tf, zeus"
+}

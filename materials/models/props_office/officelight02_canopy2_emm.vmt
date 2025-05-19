@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"concrete/computerwall004"
+	"$surfaceprop" 			"metal"
+	
+	"$detail" 				"models/props_office/officelight02_canopy_emm"
+	"$detailblendmode"		"5"
+	"$detailblendfactor"	"1"
+	"$detailscale"			"1"
+	"$detailcolor"			"[255 243 244]"
+	
+}

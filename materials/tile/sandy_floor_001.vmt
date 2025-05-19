@@ -1,0 +1,17 @@
+"WorldVertexTransition"
+{
+	"$baseTexture2" "tile/sandy_floor_001b"
+    	"$bumpmap2" "tile/sandy_floor_001b_normal"
+
+	"$baseTexture" "tile/sandy_floor_001"
+    	"$bumpmap" "tile/sandy_floor_001_normal"
+
+	"$surfaceprop" "concrete"
+	"%keywords" "tf, zeus"
+
+	"$detail" "overlays/detail001"
+	"$detailscale" "1.9"
+	"$detailblendmode" "0"
+	"$detailblendfactor" "1"
+}
+

@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	$basetexture "models/props_favela/utility_pole"
+
+	$phong 1
+	$phongfresnelranges "[2 1 6]"
+	$phongexponent 4
+	$phongboost 0
+	$basemapalphaphongmask 1
+
+	$color2 "[0.40 0.47 0.57]"
+}

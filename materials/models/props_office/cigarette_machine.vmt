@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_office/cigarette_machine"
+	"$bumpmap"				"models/props_office/cigarette_machine_nrm"
+	"$surfaceprop" 			"Metal"
+	
+	"$phong"				"1"
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$phongexponent"		"100"
+	"$phongboost"			"5"
+	
+}

@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\props_gameplay\mvm_emergency_light_cone"
+	$additive 1
+	$selfillum 1
+	
+	"$blendtintbybasealpha" "0" 
+	"$blendtintcoloroverbase" "0"  
+
+	"$colortint_base" "{255 230 53}"
+	"$color2" "{255 230 53}"
+	"$colortint_tmp" "[0 0 0]"
+
+
+	"Proxies"
+	{		
+		"Sine" // a proxy which produces a sine wave
+		{
+			resultVar $selfillumtint // The shader parameter to be manipulated
+			sineperiod	0.5
+			sinemin	 	0.01
+			sinemax		0.9
+		}
+	}
+}

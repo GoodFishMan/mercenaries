@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "decals/embargo_mountaincloud1"
+	"$translucent" 1
+	"%keywords" "tf,embargo"
+}

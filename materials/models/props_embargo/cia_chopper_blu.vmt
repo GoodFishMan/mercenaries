@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\props_embargo\cia_chopper_blu"
+	"$basemapalphaphongmask" "1"
+	//"$envmap" "cubemaps/cubemap_specular002"	
+	//"$basealphaenvmapmask" "1"
+	//"$envmaptint"  "{2 2 2}"
+	"$phong" "1"
+	"$phongexponenttexture" "models\props_embargo\cia_chopper_exp"
+	"$phongalbedotint" "1"
+	//"$phongexponent" 15
+	"$phongboost" "1"	
+	"$phongfresnelranges"	"[.6 .9 1]"
+	"$halflambert" "0"
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" "1"										// Boost for ambient cube component of rim lighting
+	"$rimmask" "1"
+}

@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "Lights/White001"
+	"$color" "{48 120 154}"
+	"%keywords" "tf"
+	"$nofog" 1
+}

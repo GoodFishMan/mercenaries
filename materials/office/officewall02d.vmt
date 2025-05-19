@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "office/officewall02a"
+	"$surfaceprop" "carpet"
+	"$color2"	"{173 210 148}"
+	"$blendtintbybasealpha"	"1"
+}

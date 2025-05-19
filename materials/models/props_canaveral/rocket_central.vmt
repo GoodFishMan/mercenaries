@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_canaveral/rocket_central_d"
+	"$surfaceprop" "Metal"
+	"$bumpmap" "models/props_canaveral/rocket_central_na"
+	"$phong" 1
+	"$phongboost" 2
+//	"$phongexponenttexture" "models/props_canaveral/rocket_engine_p"
+	"$phongexponentfactor" 5
+	"$phongfresnelranges"	"[0.2 0.2 0.2]"
+	"$invertphongmask" 1
+}

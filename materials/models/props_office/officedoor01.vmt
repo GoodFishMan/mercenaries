@@ -1,0 +1,17 @@
+
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_office/officedoor01"
+	"$bumpmap"				"models/props_office/officedoor01_nrm"
+	"$surfaceprop" 			"wood"
+	
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" ".25"	
+	"$halflambert"	"1"
+	"$phongfresnelranges"	"[.7 15 10]"
+	//$basemapalphaphongmask 	"1"
+	//"$bumpmap" "Models/effects/flat_normal"
+	"$color2"	"[.5 .5 .5]" //anti compression bullshit
+	
+}

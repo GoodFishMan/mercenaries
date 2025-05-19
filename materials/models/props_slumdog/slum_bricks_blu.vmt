@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	$basetexture "bricks/slum_bricks_blu"
+	"$surfaceprop" "concrete"
+}

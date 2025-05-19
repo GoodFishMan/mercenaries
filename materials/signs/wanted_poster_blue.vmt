@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+"$basetexture" "signs/wanted_poster_blue"
+"$decal" 1
+"$decalscale" 0.05
+"$translucent" 1
+"%keywords" "tf, embargo"
+}

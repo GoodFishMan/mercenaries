@@ -1,0 +1,16 @@
+"LightMappedGeneric"
+{
+	"$basetexture" "nature/rpz_waterflow1"
+	"$surfaceprop" "No_decal"
+	"$nodecal" "1"
+	"%keywords" "tf,rpz"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" -1.15
+			"texturescrollangle" 90
+		}
+	}
+}

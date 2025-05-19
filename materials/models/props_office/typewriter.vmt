@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_office/typewriter"
+	"$bumpmap"				"models/props_office/typewriter_nrm"
+	"$surfaceprop" 			"metal"
+	
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" ".25"	
+	"$halflambert"	"1"
+	"$phongfresnelranges"	"[.7 15 10]"
+	//$basemapalphaphongmask 	"1"
+	//"$bumpmap" "Models/effects/flat_normal"
+	
+}

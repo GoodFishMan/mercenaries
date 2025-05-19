@@ -1,0 +1,11 @@
+LightmappedGeneric
+{
+	$basetexture "fabric/favella_fabric_01"
+	$bumpmap "fabric/favella_fabric_01_normal"
+	$surfaceprop Carpet
+	$ssbump 1
+
+	$color "[0.04 0.07 0.09]"
+
+	%keywords "tf"
+}
