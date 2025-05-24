@@ -20754,7 +20754,7 @@
 			"image_inventory"	"backpack/weapons/w_models/w_smg"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_world"	"models/weapons/w_smg.mdl"
+			"model_world"	"models/weapons/w_models/w_ak47.mdl"
 			"attach_to_hands"	"0"
 			"used_by_classes"
 			{

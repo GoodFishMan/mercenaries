@@ -103,7 +103,7 @@
 		}
 		"weapon_test3"
 		{
-			"item_name"	"SMG22"
+			"item_name"	"MP5"
 			"model_player"	"models/weapons/w_models/w_smg.mdl"
 			"model_world"	"models/weapons/w_models/w_smg.mdl"
 			"attach_to_hands"	"0"

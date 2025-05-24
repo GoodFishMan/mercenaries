@@ -146,9 +146,9 @@
 			
 
 		}
-		"weapon_m4a1"
+		"weapon_assault_rifle"
 		{
-			"item_name"	"M4A1"
+			"item_name"	"Assault Rifle"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -163,7 +163,7 @@
 			{
 				"mult_spread_scales_consecutive"	"1.0"
 				"max spread number"		"1.5"
-				"mod_recoil_angle"	"0.3"
+				"mod_recoil_angle"	"0.8"
 			}
 
 		}
@@ -282,14 +282,14 @@
 		"34449"
 		{
 			"name"	"Assault Weapon"
-			"prefab"	"weapon_m4a1 weapon_rifle"
+			"prefab"	"weapon_assault_rifle weapon_rifle"
 			"baseitem" "0"
 			"soloitem" "1"
 			"attributes"
 			{
 				"hidden secondary max ammo penalty"
 				{
-					"attribute_class"	"mult_maxammo_secondary"
+					"attribute_class"	"mult_maxammo_primary"
 					"value"	"4.0"
 				}
 			}
@@ -576,9 +576,9 @@
 		}
 		"34458"
 		{
-			"name"		"Skull Mask 3"
+			"name"		"Smoke"
 			"prefab"		"no_craft misc marketable"
-			"item_name"		"Skull Mask 3"
+			"item_name"		"Smoke"
 			"item_description"		""
 			"item_type_name"		"#TF_Wearable_Mask"
 			"equip_region"			"face"
@@ -601,6 +601,146 @@
 			"visuals"
 			{	
 				"skin"	"9"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34459"
+		{
+			"name"		"Smilely"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Smilely"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"10"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34460"
+		{
+			"name"		"Splattered"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Splattered"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"11"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34461"
+		{
+			"name"		"Tribal"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Tribal"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"12"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34462"
+		{
+			"name"		"Loki"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Loki"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"13"
 				"player_bodygroups"
 				{
 					"head"		"1"
