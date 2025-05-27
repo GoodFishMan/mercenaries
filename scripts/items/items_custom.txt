@@ -164,15 +164,7 @@
 				"mult_spread_scales_consecutive"	"1.0"
 				"max spread number"		"1.5"
 				"mod_recoil_angle"	"0.8"
-			}
-
-		}
-		"weapon_test1"
-		{
-			"item_name"	"Degreaser Two"
-			"static_attrs"
-			{
-				"weapon burn dmg reduced"				"0.30"
+				"mult_player_movespeed_active"	"0.95"
 			}
 		}
 	}
@@ -287,7 +279,7 @@
 			"soloitem" "1"
 			"attributes"
 			{
-				"hidden secondary max ammo penalty"
+				"hidden primary max ammo bonus"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"	"4.0"
