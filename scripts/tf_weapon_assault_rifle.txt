@@ -18,7 +18,7 @@ WeaponData
 	"Spread"		"0.01"
 	"TimeIdle"		"10.0"
 	"TimeIdleEmpty"		"1.0"
-	"TimeFireDelay"		"0.09"
+	"TimeFireDelay"		"0.1"
 	"ProjectileType"	"projectile_bullet"
 	"BrassModel"		"models/weapons/shells/shell_pistol.mdl"
 	"UseRapidFireCrits"	"1"
@@ -51,7 +51,7 @@ WeaponData
 	{
 		"reload"		"Weapon_SMG.WorldReload"
 		"empty"			"Weapon_SMG.ClipEmpty"	
-		"single_shot"		"Weapon_M4A1.Single"
+		"single_shot"		"Weapon_AK47.Single"
 		"burst"			"Weapon_SMG.SingleCrit"
 	}
 
