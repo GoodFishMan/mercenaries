@@ -30,9 +30,25 @@
 	}
 }
 
+"Player.FallGear"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.72"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"player/kevlar1.wav"
+		"wave"	"player/kevlar2.wav"
+		"wave"	"player/kevlar3.wav"
+		"wave"	"player/kevlar4.wav"
+	}
+}
+
 "Default.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"			".72"
 	"rndwave"
@@ -44,7 +60,7 @@
 
 "Default.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"			".72"
 	"rndwave"
@@ -56,7 +72,7 @@
 
 "SolidMetal.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"		"1.0"
 	"rndwave"
@@ -68,7 +84,7 @@
 
 "SolidMetal.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"		"1.0"
 	"rndwave"
@@ -79,7 +95,7 @@
 }
 "Dirt.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"		"1.0"
 	"rndwave"
@@ -91,7 +107,7 @@
 
 "Dirt.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"		"1.0"
 	"rndwave"
@@ -103,7 +119,7 @@
 
 "Mud.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"0.6"
 	"pitch"			"90,105"
 	"rndwave"
@@ -115,7 +131,7 @@
 
 "Mud.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"0.6"
 	"pitch"			"90,105"
 	"rndwave"
@@ -127,7 +143,7 @@
 
 "SlipperySlime.StepLeft"
 {
-	"soundlevel"	"SNDLVL_96dB"
+	"soundlevel"	"SNDLVL_70dB"
 	"volume"		"0.6"
 	"pitch"			"90,105"
 	"rndwave"
@@ -139,7 +155,7 @@
 
 "SlipperySlime.StepRight"
 {
-	"soundlevel"	"SNDLVL_96dB"
+	"soundlevel"	"SNDLVL_70dB"
 	"volume"		"0.6"
 	"pitch"			"90,105"
 	"rndwave"
@@ -151,7 +167,7 @@
 
 "Grass.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -163,7 +179,7 @@
 
 "Grass.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -175,7 +191,7 @@
 
 "MetalGrate.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -187,7 +203,7 @@
 
 "MetalGrate.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -199,7 +215,7 @@
 
 "MetalVent.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -211,7 +227,7 @@
 
 "MetalVent.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -223,7 +239,7 @@
 
 "Tile.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -235,7 +251,7 @@
 
 "Tile.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -296,7 +312,7 @@
 
 "Ladder.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -308,7 +324,7 @@
 
 "Ladder.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -320,7 +336,7 @@
 
 "Concrete.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -332,7 +348,7 @@
 
 "Concrete.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -344,7 +360,7 @@
 
 "Gravel.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -356,7 +372,7 @@
 
 "Gravel.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -368,7 +384,7 @@
 
 "ChainLink.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -380,7 +396,7 @@
 
 "ChainLink.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -404,7 +420,7 @@
 
 "Sand.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -416,7 +432,7 @@
 
 "drywall.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -428,7 +444,7 @@
 
 "drywall.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -441,7 +457,7 @@
 
 "Wood.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -453,7 +469,7 @@
 
 "Wood.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -465,7 +481,7 @@
 
 "Ladder.WoodStepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -477,7 +493,7 @@
 
 "Ladder.WoodStepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -489,7 +505,7 @@
 
 "Wood_Box.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -501,7 +517,7 @@
 
 "Wood_Box.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -512,7 +528,7 @@
 }
 "Wood_Crate.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -524,7 +540,7 @@
 
 "Wood_Crate.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -536,7 +552,7 @@
 
 "Wood_Panel.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -548,7 +564,7 @@
 
 "Wood_Panel.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -560,7 +576,7 @@
 
 "Metal_Box.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -572,7 +588,7 @@
 
 "Metal_Box.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"volume"		"1.0"
 	"pitch"			"95,105"
 	"rndwave"
@@ -601,7 +617,7 @@
 
 "cleats_dirt.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"			".72"
 	"rndwave"
@@ -613,7 +629,7 @@
 
 "cleats_dirt.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"			".72"
 	"rndwave"
@@ -625,7 +641,7 @@
 
 "cleats_conc.StepLeft"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"			".72"
 	"rndwave"
@@ -637,7 +653,7 @@
 
 "cleats_conc.StepRight"
 {
-	"soundlevel"		"SNDLVL_96dB"
+	"soundlevel"		"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"			".72"
 	"rndwave"
@@ -649,7 +665,7 @@
 
 "PegLeg.StepRight"
 {
-	"soundlevel"	"SNDLVL_96dB"
+	"soundlevel"	"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"		"1"
 	"rndwave"
@@ -661,7 +677,7 @@
 
 "Chest.Step"
 {
-	"soundlevel"	"SNDLVL_96dB"
+	"soundlevel"	"SNDLVL_70dB"
 	"pitch"			"95,105"
 	"volume"		"1"
 	"rndwave"
