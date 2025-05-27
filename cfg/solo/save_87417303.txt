@@ -1,8 +1,0 @@
-"solo_data"
-{
-	"Credits"		"0x0000000000002710"
-	"UnlockedItems"
-	{
-		"The Flare Gun"		"1"
-	}
-}
