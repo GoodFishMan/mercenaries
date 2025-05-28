@@ -1,4 +1,4 @@
-fWeaponData
+WeaponData
 {
 	// Attributes Base.
 	"printname"			"#TF_Weapon_Shotgun"
@@ -12,10 +12,10 @@ fWeaponData
 
 	
 	// Primary Attributes
-	"Damage"			"6"
+	"Damage"			"10"
 	"Range"				"8192"
 	"BulletsPerShot"		"10"
-	"Spread"			"0.0675"
+	"Spread"			"0.04"
 	"PunchAngle"			"2.0"
 	"TimeFireDelay"			"0.625"
 	"TimeIdle"			"5.0"
