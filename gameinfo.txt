@@ -63,7 +63,6 @@
 			game				|appid_440|tf
 			game				|appid_243750|hl2
 			platform			|appid_243750|platform
-			
 			// DOWN BELOW USED FOR HAMMER //
 			game_lv				hl2/hl2_lv.vpk
 			game				|all_source_engine_paths|hl2/hl2_textures.vpk 
