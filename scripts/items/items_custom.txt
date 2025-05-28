@@ -33,24 +33,7 @@
 				"weapon spread scale"	"2.0"
 				"mod_recoil_angle"		"1.0"
 				
-				"damage bonus"		"1.5"
 				"fire rate bonus"	"0.75"
-			}
-			"visuals"
-			{
-				"animation_replacement"
-				{
-					"ACT_MP_STAND_SECONDARY"	"ACT_HL2MP_IDLE_SMG1"
-					"ACT_MP_CROUCH_SECONDARY"	"ACT_HL2MP_IDLE_CROUCH_SMG1"
-					"ACT_MP_RUN_SECONDARY"	"ACT_HL2MP_RUN_SMG1"
-					"ACT_MP_AIRWALK_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
-					"ACT_MP_CROUCHWALK_SECONDARY"	"ACT_HL2MP_WALK_CROUCH_SMG1"
-					"ACT_MP_JUMP_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
-					"ACT_MP_JUMP_START_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
-					"ACT_MP_JUMP_FLOAT_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
-					"ACT_MP_AIRWALK_SECONDARY"	"ACT_HL2MP_JUMP_SMG1"
-					"ACT_MP_SWIM_SECONDARY"	"ACT_HL2MP_SWIM_SMG1"
-				}
 			}
 		}
 		"weapon_shockingtruth"
@@ -167,6 +150,27 @@
 				"mult_player_movespeed_active"	"0.95"
 			}
 		}
+		"weapon_battle_rifle"
+		{
+			"item_name"	"Battle Rifle"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"pyro" "1"
+			}
+			"static_attrs"
+			{
+				"mult_spread_scales_consecutive"	"1.0"
+				"max spread number"		"1.5"
+				"mod_recoil_angle"	"0.6"
+				"mult_player_movespeed_active"	"0.95"
+			}
+		}
 	}
 	"items"
 	{
@@ -279,14 +283,40 @@
 			"soloitem" "1"
 			"attributes"
 			{
-				"hidden primary max ammo bonus"
+				"primary max ammo override"
 				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"	"4.0"
+					"attribute_class"	"override_maxammo_primary"
+					"value"	"90"
 				}
 			}
 		}
 		"34450"
+		{
+			"name"	"Battle Weapon"
+			"prefab"	"weapon_battle_rifle weapon_battlerifle"
+			"baseitem" "0"
+			"soloitem" "1"
+			"model_world"	"models/weapons/w_models/w_mk18.mdl"
+			"attributes"
+			{
+				"primary max ammo override"
+				{
+					"attribute_class"	"override_maxammo_primary"
+					"value"	"90"
+				}
+				"Burst Fire Size"
+				{
+					"attribute_class"	"burst_size"
+					"value"	"3"
+				}
+				"Burst Fire Delay"
+				{
+					"attribute_class"	"burst_delay"
+					"value"	"0.3"
+				}
+			}
+		}
+		"34550"
 		{
 			"name"		"Crow Mask"
 			"prefab"		"no_craft misc marketable"
@@ -321,7 +351,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34451"
+		"34551"
 		{
 			"name"		"Animal Skull"
 			"prefab"		"no_craft misc marketable"
@@ -356,7 +386,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34452"
+		"34552"
 		{
 			"name"		"Dave Tep"
 			"prefab"		"no_craft misc marketable"
@@ -391,7 +421,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34453"
+		"34553"
 		{
 			"name"		"Bite Mask"
 			"prefab"		"no_craft misc marketable"
@@ -426,7 +456,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34454"
+		"34554"
 		{
 			"name"		"Fire Blue"
 			"prefab"		"no_craft misc marketable"
@@ -461,7 +491,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34455"
+		"34555"
 		{
 			"name"		"Green"
 			"prefab"		"no_craft misc marketable"
@@ -496,7 +526,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34456"
+		"34556"
 		{
 			"name"		"Skull Mask 1"
 			"prefab"		"no_craft misc marketable"
@@ -531,7 +561,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34457"
+		"34557"
 		{
 			"name"		"Skull Mask 2"
 			"prefab"		"no_craft misc marketable"
@@ -566,7 +596,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34458"
+		"34558"
 		{
 			"name"		"Smoke"
 			"prefab"		"no_craft misc marketable"
@@ -601,7 +631,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34459"
+		"34559"
 		{
 			"name"		"Smilely"
 			"prefab"		"no_craft misc marketable"
@@ -636,7 +666,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34460"
+		"34560"
 		{
 			"name"		"Splattered"
 			"prefab"		"no_craft misc marketable"
@@ -671,7 +701,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34461"
+		"34561"
 		{
 			"name"		"Tribal"
 			"prefab"		"no_craft misc marketable"
@@ -706,7 +736,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"34462"
+		"34562"
 		{
 			"name"		"Loki"
 			"prefab"		"no_craft misc marketable"
