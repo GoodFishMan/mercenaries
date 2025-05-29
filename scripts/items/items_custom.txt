@@ -166,7 +166,7 @@
 			"static_attrs"
 			{
 				"mult_spread_scales_consecutive"	"1.0"
-				"max spread number"		"1.5"
+				"max spread number"		"1.25"
 				"mod_recoil_angle"	"0.6"
 				"mult_player_movespeed_active"	"0.95"
 			}
@@ -302,7 +302,7 @@
 				"primary max ammo override"
 				{
 					"attribute_class"	"override_maxammo_primary"
-					"value"	"90"
+					"value"	"72"
 				}
 				"Burst Fire Size"
 				{

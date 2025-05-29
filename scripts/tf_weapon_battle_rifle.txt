@@ -12,10 +12,10 @@ WeaponData
 
 		
 	// Attributes TF.
-	"Damage"		"40"
+	"Damage"		"30"
 	"Range"			"8192"
 	"BulletsPerShot"	"1"
-	"Spread"		"0.01"
+	"Spread"		"0.008"
 	"TimeIdle"		"10.0"
 	"TimeIdleEmpty"		"1.0"
 	"TimeFireDelay"		"0.09"
