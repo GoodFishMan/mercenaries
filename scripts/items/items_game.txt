@@ -20893,6 +20893,14 @@
 				"weapon_stattrak_module_scale"			"0.676"
 				"min_viewmodel_offset"					"10 0 -10"
 			}
+			"attributes"
+			{
+				"sniperrifle has laser pointer"
+				{
+					"attribute_class"	"sniper_has_laserdot"
+					"value"				"1"
+				}
+			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 			"particle_suffix"		"sniperrifle"
@@ -117474,6 +117482,15 @@
 			"effect_type"			"positive"
 			"hidden"				"1"
 			"stored_as_integer"		"1"
+		}
+		"3027"
+		{
+            "name"    "sniperrifle has laser pointer"
+            "attribute_class"    "sniper_has_laserdot"
+            "description_format"    "value_is_additive"
+            "hidden"    "1"
+            "effect_type"    "negative"
+            "stored_as_integer"    "0"
 		}
 
 	}
