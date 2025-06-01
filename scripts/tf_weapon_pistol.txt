@@ -11,7 +11,7 @@ WeaponData
 	"Damage"		"20"
 	"Range"			"4096"
 	"BulletsPerShot"	"1"
-	"Spread"		"0.04"
+	"Spread"		"0.01"
 	"TimeFireDelay"		"0.15"
 	"TimeIdle"		"5.0"
 	"TimeIdleEmpty"		"0.25"
