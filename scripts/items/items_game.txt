@@ -19457,6 +19457,14 @@
 				"engineer"	"1"
 				"scout" "1"
 			}
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
+			}
 			"static_attrs"
 			{
 				"weapon_stattrak_module_scale"			"0.723"
@@ -20893,14 +20901,14 @@
 				"weapon_stattrak_module_scale"			"0.676"
 				"min_viewmodel_offset"					"10 0 -10"
 			}
-			"attributes"
-			{
-				"sniperrifle has laser pointer"
-				{
-					"attribute_class"	"sniper_has_laserdot"
-					"value"				"1"
-				}
-			}
+			//"attributes"
+			//{
+			//	"sniperrifle has laser pointer"
+			//	{
+			//		"attribute_class"	"sniper_has_laserdot"
+			//		"value"				"1"
+			//	}
+			//}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 			"particle_suffix"		"sniperrifle"
@@ -21468,7 +21476,13 @@
 					"attribute_class"	"mod_jump_height_from_weapon"
 					"value" "1.25"
 				}
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
 			}
+
 			"visuals"
 			{
 				"sound_single_shot"	"Weapon_Winger.Single"
@@ -21841,6 +21855,14 @@
 		{
 			"prefab"	"paintkit_weapon weapon_pistol"
 			"xifier_class_remap"	"weapon_pistol"
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
+			}
 			"visuals"
 			{
 				"styles"
@@ -22290,6 +22312,14 @@
 			{
 				"engineer"	"1"
 			}
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
+			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
@@ -22327,6 +22357,14 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+			}
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
@@ -24331,6 +24369,14 @@
 				"scout"	"1"
 				"engineer"	"1"
 			}
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
+			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 			"xifier_class_remap"	"TTG Max Pistol"
@@ -25607,6 +25653,14 @@
 			"tags"
 			{
 				"can_be_festivized"		"1"
+			}
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
 			}
 			"visuals"
 			{
@@ -27331,6 +27385,14 @@
 			{
 				"scout"	"1"
 				"engineer"	"1"
+			}
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
@@ -32723,6 +32785,11 @@
 				{
 					"attribute_class"	"mult_clipsize"
 					"value" "0.75"
+				}
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
 				}
 			}
 			"visuals"
@@ -53900,6 +53967,14 @@
 			{
 				"weapon_allow_inspect"		"1"
 				"ragdolls become ash"		"1"
+			}
+			"attributes"
+			{
+				"click fire"
+				{
+					"attribute_class"	"click_fire"
+					"value"				"1"
+				}
 			}
 			"visuals"
 			{
