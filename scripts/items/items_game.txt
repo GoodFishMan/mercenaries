@@ -16528,7 +16528,8 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"			"5 0 -8"
-				"weapon_stattrak_module_scale"		"0.676"				
+				"weapon_stattrak_module_scale"		"0.676"		
+				"mult_player_movespeed_active"	"0.9"
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
@@ -16749,7 +16750,7 @@
 			"item_type_name"	"#TF_Weapon_Battle_Banner"
 			"item_name"	"#TF_Unique_Achievement_SoldierBuff"
 			"item_description"	"#TF_Unique_Achievement_SoldierBuff_Desc"
-			"item_slot"	"secondary"
+			"item_slot"	"equipment"
 			"equip_region"	"back"
 			"anim_slot"	"melee"
 			"item_quality"	"unique"
@@ -16787,6 +16788,11 @@
 				{
 					"attribute_class"	"allowed_in_medieval_mode"
 					"value"	"1"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"	"0.95"
 				}
 			}
 			"visuals"
@@ -17327,7 +17333,7 @@
 			"item_iconname" "detonator"
 			"item_name"		"#TF_Weapon_Flaregun_Detonator"
 			"item_description"	"#TF_Weapon_Flaregun_Detonator_Desc"
-			"item_slot"	"secondary"
+			"item_slot"	"equipment"
 			"anim_slot"	"ITEM1"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_detonator/c_detonator"
 			"image_inventory_size_w"		"128"
@@ -17341,7 +17347,7 @@
 			"max_ilevel"	"10"
 			"used_by_classes"
 			{
-				"pyro"	"1"
+				"scout"	"1"
 			}
 			"static_attrs"
 			{
@@ -17350,15 +17356,10 @@
 			}
 			"attributes"
 			{
-				"hidden secondary max ammo penalty"
+				"self dmg push force increased"
 				{
-					"attribute_class"	"mult_maxammo_secondary"
-					"value"	"0.5"
-				}
-				"blast dmg to self increased"
-				{
-					"attribute_class"	"blast_dmg_to_self"
-					"value"	"1.50"
+					"attribute_class"	"mult_dmgself_push_force"
+					"value"	"1.5"
 				}
 				"damage penalty"
 				{
@@ -17374,11 +17375,6 @@
 				{
 					"attribute_class"	"set_weapon_mode"
 					"value"	"1"
-				}
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value" "1"
 				}
 			}
 			"visuals"
@@ -18705,7 +18701,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Jar"
 			"item_name"	"#TF_Unique_Achievement_Jar"
-			"item_slot"	"secondary"
+			"item_slot"	"equipment"
 			"item_quality"	"unique"
 			"anim_slot"	"item1"
 			"min_ilevel"	"5"
@@ -18719,10 +18715,14 @@
 			"used_by_classes"
 			{
 				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"scout"		"1"
 			}
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -9"
+				"item_meter_charge_rate"	"120"
 			}
 			"attributes"
 			{
@@ -19134,6 +19134,7 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"5 0 -8"
+				"mult_player_movespeed_active"	"0.9"
 			}
 			"attributes"
 			{
@@ -19197,7 +19198,7 @@
 			"item_type_name"	"#TF_Weapon_Jar_Milk"
 			"item_description"	"#TF_MadMilk_Desc"
 			"item_name"	"#TF_MadMilk"
-			"item_slot"	"secondary"
+			"item_slot"	"equipment"
 			"item_quality"	"unique"
 			"anim_slot"	"item1"
 			"min_ilevel"	"5"
@@ -19210,6 +19211,9 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"demoman"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
 			}
 			"attributes"
 			{
@@ -20900,6 +20904,7 @@
 			{
 				"weapon_stattrak_module_scale"			"0.676"
 				"min_viewmodel_offset"					"10 0 -10"
+				"mult_player_movespeed_active"	"0.9"
 			}
 			//"attributes"
 			//{
@@ -26020,7 +26025,7 @@
 			"item_type_name"	"#TF_Weapon_Battle_Banner"
 			"item_name"	"#TF_TheBattalionsBackup"
 			"item_description"	"#TF_TheBattalionsBackup_Desc"
-			"item_slot"	"secondary"
+			"item_slot"	"equipment"
 			"equip_region"	"back"
 			"anim_slot"	"melee"
 			"item_quality"	"unique"
@@ -26065,6 +26070,11 @@
 				{
 					"attribute_class"	"allowed_in_medieval_mode"
 					"value"	"1"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"	"0.95"
 				}
 			}
 			"visuals"
@@ -26149,7 +26159,8 @@
 			}
 			"static_attrs"
 			{
-				"min_viewmodel_offset"		"5 0 -8"				
+				"min_viewmodel_offset"		"5 0 -8"	
+				"mult_player_movespeed_active"	"0.95"
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
@@ -28103,7 +28114,7 @@
 			"item_type_name"	"#TF_Weapon_SoldierSashimono"
 			"item_name"	"#TF_SoldierSashimono"
 			"item_description"	"#TF_SoldierSashimono_Desc"
-			"item_slot"	"secondary"
+			"item_slot"	"equipment"
 			"equip_region"	"back"
 			"anim_slot"	"melee"
 			"item_quality"	"unique"
@@ -28156,6 +28167,11 @@
 				{
 					"attribute_class"	"add_health_regen"
 					"value"	"4"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"	"0.95"
 				}
 				"allowed in medieval mode"
 				{
@@ -32604,7 +32620,8 @@
 			}
 			"static_attrs"
 			{
-				"min_viewmodel_offset"		"5 0 -8"				
+				"min_viewmodel_offset"		"5 0 -8"
+				"mult_player_movespeed_active"	"0.9"
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
@@ -33591,7 +33608,8 @@
 			}
 			"static_attrs"
 			{
-				"min_viewmodel_offset"		"5 0 -8"				
+				"min_viewmodel_offset"		"5 0 -8"	
+				"mult_player_movespeed_active"	"0.95"
 			}
 			"attributes"
 			{
@@ -34661,6 +34679,67 @@
 					"sniper"	"scenes\player\sniper\low\taunt_i_see_you_primary.vcd"
 				}
 			}
+		}
+		"1180"
+		{
+			"name"	"The Gas Passer"
+			"item_class"	"tf_weapon_jar_gas"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Jar_Gas"
+			"item_name"	"#TF_GasPasser"
+			"item_description"	"#TF_GasPasser_Desc"
+			"item_slot"	"equipment"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"attach_to_hands"	"1"
+			"propername"	"1"
+			"anim_slot" "MELEE_ALLCLASS"
+			"image_inventory"	"backpack/weapons/c_models/c_gascan/c_gascan"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_gascan/c_gascan.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"demoman"	"1"
+				"soldier"	"1"
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 3 -7"				
+				"item_meter_charge_type"						"3"
+				"item_meter_charge_rate"			"60"
+				"item_meter_damage_for_full_charge"			"750"
+				"item_meter_resupply_denied"		"1"
+				"grenades1_resupply_denied"				"1"
+				"item_meter_starts_empty_DISPLAY_ONLY"	"1"
+				"item_meter_charge_type_3_DISPLAY_ONLY"	"1"
+				"meter_label"							"#TF_Gas"
+			}
+			"visuals"
+			{
+				"custom_particlesystem"
+				{
+					"system"	"energydrink_milk_splash"
+				}
+				"player_poseparam"
+				{
+					"r_hand_grip"		"16"
+				}
+				"sound_deploy"	"Weapon_GasCan.Draw"
+				"sound_single_shot"	"Weapon_GasCan.Throw"
+				"sound_special1"		"Weapon_GasCan.Explode"  
+			}
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
 		}
 		"1117"
 		{
