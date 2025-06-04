@@ -1,23 +1,73 @@
 
-"GAME.ALMOST"
+"GAME.60SEC"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_NONE"
 
-	"wave"			"#*music/almost.wav"
+	"wave"			"#*music/bombplanted.mp3"
 }
 
-"HEAVY.Step"
+"GAME.10SEC"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
-	"pitch"			"85,115"
-	"soundlevel"  	"SNDLVL_96dB"
+	"soundlevel"  	"SNDLVL_NONE"
+
+	"wave"			"#*music/bombtenseccount.mp3"
+}
+"GAME.ROUNDSTART"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"player\footsteps\heavywalk1.wav"
-		"wave"		"player\footsteps\heavywalk2.wav"
-		"wave"		"player\footsteps\heavywalk3.wav"
+		"wave" 		"#*music/startround_01.mp3"
+		"wave"		"#*music/startround_02.mp3"
+		"wave"		"#*music/startround_03.mp3"
+	}
+}
+
+"Footstep.ScoutGear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"85,100"
+	"soundlevel"  	"SNDLVL_80dB"
+	"rndwave"
+	{
+		"wave"		"player\gear\scout_gear1.wav"
+		"wave"		"player\gear\scout_gear2.wav"
+	}
+}
+
+"Footstep.HeavyGear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"95,110"
+	"soundlevel"  	"SNDLVL_80dB"
+	"rndwave"
+	{
+		"wave"		"player\gear\heavy_gear1.wav"
+		"wave"		"player\gear\heavy_gear2.wav"
+		"wave"		"player\gear\heavy_gear3.wav"
+	}
+}
+
+"Player.FallGear"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.72"
+	"pitch"		"80,90"
+	"soundlevel"  "SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"player\jumplanding1.wav"
+		"wave"	"player\jumplanding2.wav"
+		"wave"	"player\jumplanding3.wav"
+		"wave"	"player\jumplanding4.wav"
 	}
 }

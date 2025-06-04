@@ -30,22 +30,6 @@
 	}
 }
 
-"Player.FallGear"
-{
-	"channel"	"CHAN_AUTO"
-	"volume"	"0.72"
-	"pitch"		"90,110"
-	"soundlevel"  "SNDLVL_80dB"
-
-	"rndwave"
-	{
-		"wave"	"player/kevlar1.wav"
-		"wave"	"player/kevlar2.wav"
-		"wave"	"player/kevlar3.wav"
-		"wave"	"player/kevlar4.wav"
-	}
-}
-
 "Default.StepLeft"
 {
 	"soundlevel"		"SNDLVL_70dB"
