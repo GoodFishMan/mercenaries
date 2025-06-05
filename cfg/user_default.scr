@@ -680,7 +680,7 @@ DESCRIPTION INFO_OPTIONS
 		"#GameUI_DisableSprays"
 		"#Tooltip_DisableSprays"
 		{ BOOL }
-		{ "1" }
+		{ "0" }
 	}
 
 	"tf_hide_custom_decals"
