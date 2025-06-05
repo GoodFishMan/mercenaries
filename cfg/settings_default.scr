@@ -57,7 +57,7 @@ DESCRIPTION SERVER_OPTIONS
 	{
 		"#Valve_Max_Players"
 		{ NUMBER 1 32 }
-		{ "12" }
+		{ "14" }
 	}
 
 	"sv_lan"
