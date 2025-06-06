@@ -117646,6 +117646,36 @@
             "effect_type"    "negative"
             "stored_as_integer"    "0"
 		}
+		"3028"
+		{
+			"name"	"headshot damage set"
+			"attribute_class"	"headshot_damage_modify_set"
+			"description_string"	"#Attrib_HeadshotDamageIncrease"
+			"description_format"	"value_is_percentage"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
+		"3029"
+		{
+			"name"	"grenade1 max ammo override"
+			"attribute_class"	"override_maxammo_grenades1"
+			"description_string"	"#Attrib_max_shot_spread"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"stored_as_integer"	"1"
+		}
+		"3030"
+		{
+			"name"	"weapon recoil scale"
+			"attribute_class"	"mult_recoil_scales_consecutive_scale"
+			"description_string"	"#Attrib_SpreadScale_Negative"
+			"description_format"	"value_is_inverted_percentage"
+			"hidden"	"0"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
 
 	}
 	"item_criteria_templates"
