@@ -1,0 +1,465 @@
+"items_game"
+{
+	"prefabs"
+	{
+
+	}
+	"items"
+	{
+		"34550"
+		{
+			"name"		"Crow Mask"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"CROWBAR MASK"
+			"item_description"		"#TF_hwn2016_mad_mask_Desc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"1"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34551"
+		{
+			"name"		"Animal Skull"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Animal Skull"
+			"item_description"		"Oh you're a fuzzy?"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"2"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34552"
+		{
+			"name"		"Dave Tep"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Tep Mask"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"3"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34553"
+		{
+			"name"		"Bite Mask"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Bite Mask"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"4"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34554"
+		{
+			"name"		"Fire Blue"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Fire Blue"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"5"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34555"
+		{
+			"name"		"Green"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Green Mask"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"6"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34556"
+		{
+			"name"		"Skull Mask 1"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Skull Mask 1"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"7"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34557"
+		{
+			"name"		"Skull Mask 2"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Skull Mask 2"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"8"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34558"
+		{
+			"name"		"Smoke"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Smoke"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"9"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34559"
+		{
+			"name"		"Smilely"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Smilely"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"10"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34560"
+		{
+			"name"		"Splattered"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Splattered"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"11"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34561"
+		{
+			"name"		"Tribal"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Tribal"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"12"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"34562"
+		{
+			"name"		"Loki"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Loki"
+			"item_description"		""
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"			"face"
+			"baseitem" "0"
+			"soloitem" "1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/masks/masks1.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+			}
+			"visuals"
+			{	
+				"skin"	"13"
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+	}
+}
