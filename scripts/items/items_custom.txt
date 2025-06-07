@@ -146,7 +146,7 @@
 			{
 				"mult_spread_scales_consecutive"	"1.0"
 				"max spread number"		"1.5"
-				"mod_recoil_angle"	"0.8"
+				"mod_recoil_angle"	"1"
 				"weapon recoil scale"		"1.2"
 				"mult_player_movespeed_active"	"0.95"
 			}
