@@ -1,0 +1,12 @@
+event HitMarker
+{
+
+	Animate	Hitmarker	Alpha	"255"	Linear 0.0 0.0		// tcHitmarker start
+	Animate	Hitmarker	Alpha	"0"		Linear 0.0 0.95 	// tcHitmarker end
+
+}
+event DamagedPlayer
+{
+	StopEvent 	HitMarker 	0.0
+	RunEvent 	HitMarker	0.01
+}

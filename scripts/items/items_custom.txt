@@ -116,14 +116,12 @@
 				"sniper"	"1"
 				"soldier"	"1"
 				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"pyro" "1"
 			}
 			"static_attrs"
 			{
 				"mult_spread_scales_consecutive"				"1.0"
 				"mod_recoil_angle"	"0.6"
+				"max spread number"		"2.0"
 			}
 			"visuals"
 			{
@@ -167,6 +165,22 @@
 				"max spread number"		"0.75"
 				"mod_recoil_angle"	"0.5"
 				"mult_player_movespeed_active"	"0.95"
+			}
+		}
+		"weapon_lmg_heavy"
+		{
+			"item_name"	"Heavy MachineGun"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"mult_spread_scales_consecutive"	"1.0"
+				"max spread number"		"5.0"
+				"mod_recoil_angle"	"0.8"
+				"weapon recoil scale"		"1"
+				"mult_player_movespeed_active"	"0.7"
 			}
 		}
 		"weapon_armor"
@@ -248,11 +262,6 @@
 				{
 					"attribute_class"	"set_weapon_mode"
 					"value"	"1"
-				}
-				"headshot damage set"
-				{
-					"attribute_class"	"headshot_damage_modify_set"
-					"value"	"4.0"
 				}
 			}
 		}
@@ -347,11 +356,6 @@
 					"attribute_class"	"set_weapon_mode"
 					"value"	"1"
 				}
-				"headshot damage set"
-				{
-					"attribute_class"	"headshot_damage_modify_set"
-					"value"	"2"
-				}
 			}
 		}
 		"34450"
@@ -377,6 +381,11 @@
 				{
 					"attribute_class"	"burst_delay"
 					"value"	"0.3"
+				}
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
 				}
 			}
 		}
@@ -455,6 +464,116 @@
 			}
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
 			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"34453"
+		{
+			"name"	"Heavy MachineGun"
+			"prefab"	"weapon_lmg_heavy weapon_lmg"
+			"baseitem" "0"
+			"soloitem" "1"
+			"model_world"	"models/weapons/w_models/w_machinegun.mdl"
+			"attributes"
+			{
+				"primary max ammo override"
+				{
+					"attribute_class"	"override_maxammo_primary"
+					"value"	"160"
+				}
+				"Reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"	"1.4"
+				}
+				"Burst Fire Size"
+				{
+					"attribute_class"	"burst_size"
+					"value"	"4"
+				}
+				"Burst Fire Delay"
+				{
+					"attribute_class"	"burst_delay"
+					"value"	"0.015"
+				}
+			}
+		}
+		"34454"
+		{
+			"name"			"The Riot Shield"
+			"item_class"		"tf_wearable_demoshield"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+			}
+			"show_in_armory"	"1"
+			"baseitem" "0"
+			"soloitem" "1"
+			"item_type_name" 	"#TF_Wearable_Shield"
+			"item_name"		"Riot Shield"
+			"item_description"	"#TF_TideTurner_Desc"
+			"item_slot"		"primary"
+			"equip_region"	"arms"
+			"anim_slot"		"FORCE_NOT_USED"
+			"item_quality"		"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"item_logname"	"riot_shield"
+			"item_iconname"	"riot_shield"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_wheel_shield/c_wheel_shield"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"45"
+			"model_player"	"models/workshop/weapons/c_models/c_wheel_shield/c_wheel_shield.mdl"
+			"act_as_wearable" "1"
+			"attach_to_hands"	"0"
+			"attach_to_hands_vm_only"	"1"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"attributes"
+			{
+				"charge impact damage increased"
+				{
+					"attribute_class"	"charge_impact_damage"
+					"value"			"2.0"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"	"0.8"
+				}
+				"dmg taken from bullets reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_bullets"
+					"value"			"0.7"
+				}
+				"dmg taken from blast reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"			"0.5"
+				}
+				"charge time decreased"
+				{
+					"attribute_class"	"mod_charge_time"
+					"value" "-0.5"
+				}
+				"self backattack crits"
+				{
+					"attribute_class"	"self_backattack_crits"
+					"value" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
 		}
 		"34550"
 		{

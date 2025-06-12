@@ -1,0 +1,9 @@
+"solo_data"
+{
+	"Credits"		"0x0000000000001F40"
+	"UnlockedItems"
+	{
+		"Shocking Truth"		"1"
+		"The Air Strike"		"1"
+	}
+}
